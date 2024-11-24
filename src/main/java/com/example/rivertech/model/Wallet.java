@@ -15,5 +15,9 @@ public class Wallet {
     private long id;
 
     @Column(nullable = false)
-    private BigDecimal balance = new BigDecimal(1000);
+    private BigDecimal balance;
+
+    public Wallet(BigDecimal balance) {
+        this.balance = balance;
+    }
 }
