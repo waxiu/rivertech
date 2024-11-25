@@ -1,9 +1,9 @@
 package com.example.rivertech.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -18,10 +18,11 @@ public class Player {
     private String surname;
     @Column(unique = true, nullable = false)
     private String username;
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToOne(mappedBy = "player", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     private Wallet wallet;
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TransactionHistory> transactionHistory;
+
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
+    private List<Bet> bets;
 
     public Player(String name, String surname, String username) {
         this.name = name;
