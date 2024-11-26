@@ -31,7 +31,11 @@ public class Wallet {
     @OneToMany(mappedBy = "wallet", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     private List<Transaction> transactions;
 
-    public void updateBalance(BigDecimal betAmount, BigDecimal winnings) {
-        this.balance = this.balance.subtract(betAmount).add(winnings);
+    public void deductBetAmount(BigDecimal betAmount) {
+        this.balance = this.balance.subtract(betAmount);
+    }
+
+    public void addWinnings(BigDecimal winnings) {
+        this.balance = this.balance.add(winnings);
     }
 }

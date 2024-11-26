@@ -1,5 +1,6 @@
 package com.example.rivertech.model;
 
+import com.example.rivertech.model.enums.BetStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -24,6 +25,8 @@ public class Bet {
     private int generatedNumber;
 
     private BigDecimal winnings;
+
+    private BetStatus status;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "player_id", nullable = false)
