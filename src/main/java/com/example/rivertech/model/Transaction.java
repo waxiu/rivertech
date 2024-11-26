@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Getter
@@ -19,7 +20,7 @@ public class Transaction {
 
     private String type; // Np. "BET", "WIN", "DEPOSIT"
 
-    private int amount; // Kwota transakcji
+    private BigDecimal amount; // Kwota transakcji
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date timestamp = new Date(); // Data utworzenia transakcji

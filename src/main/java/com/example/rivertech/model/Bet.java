@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,13 +17,13 @@ public class Bet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private int betAmount;
+    private BigDecimal betAmount;
 
     private int betNumber;
 
     private int generatedNumber;
 
-    private int winnings;
+    private BigDecimal winnings;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "player_id", nullable = false)
