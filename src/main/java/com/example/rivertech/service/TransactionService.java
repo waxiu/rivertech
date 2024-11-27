@@ -38,7 +38,7 @@ public class TransactionService {
         return transactions;
     }
 
-    public void createBetTransaction(Wallet wallet, BigDecimal betAmount) {
+    public Transaction createBetTransaction(Wallet wallet, BigDecimal betAmount) {
         logger.info("Creating bet transaction for walletId: {}, amount: {}", wallet.getId(), betAmount);
         Transaction betTransaction = Transaction.builder()
                 .type(TransactionType.BET)
@@ -47,6 +47,7 @@ public class TransactionService {
                 .build();
         transactionRepository.save(betTransaction);
         logger.info("Bet transaction created with amount: {} for walletId: {}", betAmount.negate(), wallet.getId());
+        return betTransaction;
     }
 
     public void updateWalletAndTransactions(Wallet wallet, BigDecimal winnings) {

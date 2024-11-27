@@ -2199,3 +2199,670 @@ java.lang.RuntimeException: Insufficient funds
 2024-11-27 14:24:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
 2024-11-27 14:24:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
 2024-11-27 14:24:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:24:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:24:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:24:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:24:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:24:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:24:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:24:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:24:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:25:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:25:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:25:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:25:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:25:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:25:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:25:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:25:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:25:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:25:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:25:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:25:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:26:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:26:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:26:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:26:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:26:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:26:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:26:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:26:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:26:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:26:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:26:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:26:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:27:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:27:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:27:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:27:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:27:21 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27 14:27:21 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-11-27 14:27:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:27:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-27 14:27:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-27 14:29:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 14:29:07 [main] INFO  c.e.rivertech.RivertechApplication - Starting RivertechApplication using Java 21.0.5 with PID 29292 (C:\Users\KacperJakubowski\Desktop\project\rivertech\target\classes started by KacperJakubowski in C:\Users\KacperJakubowski\Desktop\project\rivertech)
+2024-11-27 14:29:07 [main] INFO  c.e.rivertech.RivertechApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 4 JPA repository interfaces.
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:29:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-11-27 14:29:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-27 14:29:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:29:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-27 14:29:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 14:29:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-27 14:29:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1302 ms
+2024-11-27 14:29:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 14:29:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27 14:29:09 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-27 14:29:09 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 14:29:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-27 14:29:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7402c49f
+2024-11-27 14:29:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-27 14:29:09 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-27 14:29:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27 14:29:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 14:29:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:29:10 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-27 14:29:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 14:29:11 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-27 14:29:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:29:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 14:29:11 [main] INFO  c.e.rivertech.RivertechApplication - Started RivertechApplication in 4.316 seconds (process running for 4.891)
+2024-11-27 14:29:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:29:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 39, playerId: 1
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Bet created with betId: 39 for playerId: 1
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 3250.00, total winnings: 4750.00
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 5, winnings: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 3250.00, total winnings: 4750.00
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 39, for playerId: 1
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 39, status: COMPLETED, winnings: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 39, status: COMPLETED, winnings: 0
+2024-11-27 14:29:13 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 39
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 40, playerId: 1
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Bet created with betId: 40 for playerId: 1
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 3150.00, total winnings: 4650.00
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 3, winnings: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 3150.00, total winnings: 4650.00
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 40, for playerId: 1
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 40, status: COMPLETED, winnings: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 40, status: COMPLETED, winnings: 0
+2024-11-27 14:29:16 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 40
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 41, playerId: 1
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Bet created with betId: 41 for playerId: 1
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 3050.00, total winnings: 4550.00
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 7, winnings: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 3050.00, total winnings: 4550.00
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 41, for playerId: 1
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 41, status: COMPLETED, winnings: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 41, status: COMPLETED, winnings: 0
+2024-11-27 14:29:17 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 41
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 42, playerId: 1
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet created with betId: 42 for playerId: 1
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2950.00, total winnings: 4450.00
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 9, winnings: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2950.00, total winnings: 4450.00
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 42, for playerId: 1
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 42, status: COMPLETED, winnings: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 42, status: COMPLETED, winnings: 0
+2024-11-27 14:29:18 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 42
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 43, playerId: 1
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Bet created with betId: 43 for playerId: 1
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2850.00, total winnings: 4350.00
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 10, winnings: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2850.00, total winnings: 4350.00
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 43, for playerId: 1
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 43, status: COMPLETED, winnings: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 43, status: COMPLETED, winnings: 0
+2024-11-27 14:29:19 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 43
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 44, playerId: 1
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Bet created with betId: 44 for playerId: 1
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2750.00, total winnings: 4250.00
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 7, winnings: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2750.00, total winnings: 4250.00
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 44, for playerId: 1
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 44, status: COMPLETED, winnings: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 44, status: COMPLETED, winnings: 0
+2024-11-27 14:29:20 [http-nio-8080-exec-7] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 44
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 45, playerId: 1
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Bet created with betId: 45 for playerId: 1
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2650.00, total winnings: 4150.00
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 6, winnings: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2650.00, total winnings: 4150.00
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 45, for playerId: 1
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 45, status: COMPLETED, winnings: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 45, status: COMPLETED, winnings: 0
+2024-11-27 14:29:21 [http-nio-8080-exec-8] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 45
+2024-11-27 14:29:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:29:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 46, playerId: 1
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Bet created with betId: 46 for playerId: 1
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2550.00, total winnings: 4050.00
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 4, winnings: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2550.00, total winnings: 4050.00
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 46, for playerId: 1
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 46, status: COMPLETED, winnings: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 46, status: COMPLETED, winnings: 0
+2024-11-27 14:29:22 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 46
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 47, playerId: 1
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Bet created with betId: 47 for playerId: 1
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2450.00, total winnings: 3950.00
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 2, winnings: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2450.00, total winnings: 3950.00
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 47, for playerId: 1
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 47, status: COMPLETED, winnings: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 47, status: COMPLETED, winnings: 0
+2024-11-27 14:29:23 [http-nio-8080-exec-10] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 47
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 48, playerId: 1
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Bet created with betId: 48 for playerId: 1
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2350.00, total winnings: 3850.00
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 6, winnings: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2350.00, total winnings: 3850.00
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 48, for playerId: 1
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 48, status: COMPLETED, winnings: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 48, status: COMPLETED, winnings: 0
+2024-11-27 14:29:24 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 48
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 49, playerId: 1
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Bet created with betId: 49 for playerId: 1
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2250.00, total winnings: 3750.00
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 10, winnings: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2250.00, total winnings: 3750.00
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 49, for playerId: 1
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 49, status: COMPLETED, winnings: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 49, status: COMPLETED, winnings: 0
+2024-11-27 14:29:25 [http-nio-8080-exec-1] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 49
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: CRAZY_HOUSE
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 50, playerId: 1
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Bet created with betId: 50 for playerId: 1
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2150.00, total winnings: 3650.00
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 1, winnings: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2150.00, total winnings: 3650.00
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 50, for playerId: 1
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 50, status: COMPLETED, winnings: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 50, status: COMPLETED, winnings: 0
+2024-11-27 14:29:26 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 50
+2024-11-27 14:29:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:29:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: ODDS_BASED
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 51, playerId: 1
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Bet created with betId: 51 for playerId: 1
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2050.00, total winnings: 3550.00
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 8, winnings: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2050.00, total winnings: 3550.00
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 51, for playerId: 1
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 51, status: COMPLETED, winnings: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 51, status: COMPLETED, winnings: 0
+2024-11-27 14:29:37 [http-nio-8080-exec-5] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 51
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: ODDS_BASED
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 52, playerId: 1
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet created with betId: 52 for playerId: 1
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 1950.00, total winnings: 3450.00
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 6, winnings: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 1950.00, total winnings: 3450.00
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 52, for playerId: 1
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 52, status: COMPLETED, winnings: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 52, status: COMPLETED, winnings: 0
+2024-11-27 14:29:38 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 52
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: ODDS_BASED
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 53, playerId: 1
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Bet created with betId: 53 for playerId: 1
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 1850.00, total winnings: 3350.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 1, winnings: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2350.00, total winnings: 3850.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.r.service.TransactionService - Win transaction created with amount: 500.00 for walletId: 1
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 53, for playerId: 1
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 53, status: COMPLETED, winnings: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 53, status: COMPLETED, winnings: 500.00
+2024-11-27 14:29:39 [http-nio-8080-exec-6] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 53
+2024-11-27 14:29:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:29:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:29:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:29:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:30:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:30:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:30:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:30:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:30:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:30:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:30:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:30:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:30:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:30:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: ODDS_BASED
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 54, playerId: 1
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Bet created with betId: 54 for playerId: 1
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2250.00, total winnings: 3750.00
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 6, winnings: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2250.00, total winnings: 3750.00
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 54, for playerId: 1
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 54, status: COMPLETED, winnings: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 54, status: COMPLETED, winnings: 0
+2024-11-27 14:30:48 [http-nio-8080-exec-9] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 54
+2024-11-27 14:30:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:30:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:31:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:31:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:31:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:31:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:31:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:31:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:31:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:31:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:31:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:31:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:31:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:31:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:32:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:32:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:32:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:32:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:32:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:32:21 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:32:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:32:31 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:32:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:32:41 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:32:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:32:51 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:33:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:33:01 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:33:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:33:11 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:33:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27 14:33:16 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-11-27 14:33:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:33:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-27 14:33:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-27 14:33:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 14:33:22 [main] INFO  c.e.rivertech.RivertechApplication - Starting RivertechApplication using Java 21.0.5 with PID 24520 (C:\Users\KacperJakubowski\Desktop\project\rivertech\target\classes started by KacperJakubowski in C:\Users\KacperJakubowski\Desktop\project\rivertech)
+2024-11-27 14:33:22 [main] INFO  c.e.rivertech.RivertechApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 4 JPA repository interfaces.
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:33:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-11-27 14:33:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-27 14:33:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:33:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-27 14:33:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 14:33:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-27 14:33:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1163 ms
+2024-11-27 14:33:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 14:33:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27 14:33:23 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-27 14:33:23 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 14:33:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-27 14:33:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bf4e48e
+2024-11-27 14:33:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-27 14:33:23 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-27 14:33:23 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27 14:33:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 14:33:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:33:25 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-27 14:33:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 14:33:25 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-27 14:33:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:33:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 14:33:26 [main] INFO  c.e.rivertech.RivertechApplication - Started RivertechApplication in 4.451 seconds (process running for 5.13)
+2024-11-27 14:33:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:33:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: ODDS_BASED
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 2150.00, total winnings: 3650.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 55, playerId: 1
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet created with betId: 55 for playerId: 1
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 0, winnings: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 3150.00, total winnings: 4650.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Win transaction created with amount: 1000.00 for walletId: 1
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 55, for playerId: 1
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 55, status: COMPLETED, winnings: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 55, status: COMPLETED, winnings: 1000.00
+2024-11-27 14:33:30 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 55
+2024-11-27 14:33:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:33:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:33:46 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:33:46 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:33:56 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:33:56 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:34:06 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:34:06 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:34:16 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:34:16 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:34:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:34:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:34:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:34:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:34:46 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:34:46 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:34:56 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:34:56 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:35:06 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:35:06 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:35:16 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:35:16 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:35:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:35:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:35:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:35:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:35:46 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:35:46 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:35:56 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:35:56 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:36:06 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:36:06 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:36:16 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:36:16 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:36:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:36:26 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:36:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:36:36 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:36:39 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27 14:36:39 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-11-27 14:36:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:36:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-27 14:36:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-27 14:36:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 14:36:44 [main] INFO  c.e.rivertech.RivertechApplication - Starting RivertechApplication using Java 21.0.5 with PID 9868 (C:\Users\KacperJakubowski\Desktop\project\rivertech\target\classes started by KacperJakubowski in C:\Users\KacperJakubowski\Desktop\project\rivertech)
+2024-11-27 14:36:44 [main] INFO  c.e.rivertech.RivertechApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-27 14:36:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 14:36:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 14:36:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-11-27 14:36:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-27 14:36:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:36:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-27 14:36:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 14:36:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-27 14:36:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1209 ms
+2024-11-27 14:36:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 14:36:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27 14:36:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-27 14:36:46 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 14:36:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-27 14:36:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@299eca90
+2024-11-27 14:36:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-27 14:36:46 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-27 14:36:46 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27 14:36:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 14:36:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 14:36:47 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-27 14:36:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 14:36:47 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-27 14:36:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 14:36:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 14:36:48 [main] INFO  c.e.rivertech.RivertechApplication - Started RivertechApplication in 4.488 seconds (process running for 5.024)
+2024-11-27 14:36:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:36:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:36:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:36:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 0, gameType: ODDS_BASED
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 3050.00, total winnings: 4550.00
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 56, playerId: 1
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet created with betId: 56 for playerId: 1
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 8, winnings: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 3050.00, total winnings: 4550.00
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 56, for playerId: 1
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 56, status: COMPLETED, winnings: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 56, status: COMPLETED, winnings: 0
+2024-11-27 14:37:00 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 56
+2024-11-27 14:37:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:37:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:37:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:37:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 14:37:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 14:37:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed

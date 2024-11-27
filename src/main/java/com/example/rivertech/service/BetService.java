@@ -4,6 +4,7 @@ import com.example.rivertech.dto.BetHistory;
 import com.example.rivertech.dto.GameResult;
 import com.example.rivertech.model.Bet;
 import com.example.rivertech.model.Player;
+import com.example.rivertech.model.Transaction;
 import com.example.rivertech.model.enums.BetStatus;
 import com.example.rivertech.repository.BetRepository;
 import org.slf4j.Logger;
@@ -33,7 +34,7 @@ public class BetService {
         return bets;
     }
 
-    public Bet createPendingBet(Player player, BigDecimal betAmount, int chosenNumber) {
+    public Bet createPendingBet(Player player, BigDecimal betAmount, int chosenNumber, Transaction transaction) {
         logger.info("Creating pending bet for playerId: {}, betAmount: {}, chosenNumber: {}",
                 player.getId(), betAmount, chosenNumber);
         Bet bet = Bet.builder()
@@ -41,6 +42,7 @@ public class BetService {
                 .betAmount(betAmount)
                 .betNumber(chosenNumber)
                 .status(BetStatus.PENDING)
+                .transaction(transaction)
                 .build();
         Bet savedBet = betRepository.save(bet);
         logger.info("Pending bet created with betId: {}, playerId: {}", savedBet.getId(), player.getId());

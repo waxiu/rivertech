@@ -52,15 +52,15 @@ public class GameService {
 
         Player player = validatePlayerAndBalance(playerId, betAmount);
 
-        Bet bet = betService.createPendingBet(player, betAmount, chosenNumber);
-        logger.info("Bet created with betId: {} for playerId: {}", bet.getId(), playerId);
-
         walletService.deductFundsFromWallet(player.getWallet(), betAmount);
         logger.info("Funds deducted from walletId: {} for amount: {}", player.getWallet().getId(), betAmount);
 
-        transactionService.createBetTransaction(player.getWallet(), betAmount);
+        Transaction transaction = transactionService.createBetTransaction(player.getWallet(), betAmount);
         logger.info("Transaction created for walletId: {}, amount: {}, type: {}",
                 player.getWallet().getId(), betAmount, TransactionType.BET);
+
+        Bet bet = betService.createPendingBet(player, betAmount, chosenNumber, transaction);
+        logger.info("Bet created with betId: {} for playerId: {}", bet.getId(), playerId);
 
         GameResult gameResult = generateGameResult(gameType, bet, betAmount, chosenNumber);
         logger.info("Game result generated with randomNumber: {}, winnings: {}",
