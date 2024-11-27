@@ -7,6 +7,8 @@ import com.example.rivertech.repository.PlayerRepository;
 import com.example.rivertech.repository.TransactionRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -25,16 +27,18 @@ public class TransactionService {
         this.playerRepository = playerRepository;
     }
 
-    public List<Transaction> getTransactionsForPlayer(Long playerId) {
-        logger.info("Fetching transactions for playerId: {}", playerId);
+    public Page<Transaction> getTransactionsForPlayer(Long playerId, Pageable pageable) {
+        logger.info("Fetching paginated transactions for playerId: {}, page: {}, size: {}",
+                playerId, pageable.getPageNumber(), pageable.getPageSize());
 
         if (!playerRepository.existsById(playerId)) {
             logger.error("Player with ID {} not found", playerId);
             throw new IllegalArgumentException("Player with ID " + playerId + " not found.");
         }
 
-        List<Transaction> transactions = transactionRepository.findByPlayerId(playerId);
-        logger.info("Found {} transactions for playerId: {}", transactions.size(), playerId);
+        Page<Transaction> transactions = transactionRepository.findByPlayerId(playerId, pageable);
+        logger.info("Found {} transactions for playerId: {} on page: {}",
+                transactions.getTotalElements(), playerId, pageable.getPageNumber());
         return transactions;
     }
 
