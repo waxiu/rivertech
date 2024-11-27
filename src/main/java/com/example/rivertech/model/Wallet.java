@@ -19,6 +19,8 @@ public class Wallet {
     @Column(nullable = false)
     private BigDecimal balance;
 
+    private BigDecimal totalWinnings;
+
     public Wallet(BigDecimal balance) {
         this.balance = balance;
     }

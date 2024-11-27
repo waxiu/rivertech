@@ -19,6 +19,7 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Enumerated(EnumType.STRING)
     private TransactionType type; // Np. "BET", "WIN", "DEPOSIT"
 
     private BigDecimal amount; // Kwota transakcji

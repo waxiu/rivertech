@@ -22,12 +22,10 @@ public class TransactionService {
     }
 
     public List<Transaction> getTransactionsForPlayer(Long playerId) {
-        // Sprawdź, czy gracz istnieje
         if (!playerRepository.existsById(playerId)) {
             throw new IllegalArgumentException("Player with ID " + playerId + " not found.");
         }
 
-        // Pobierz transakcje gracza
         return transactionRepository.findByPlayerId(playerId);
     }
 
@@ -41,8 +39,6 @@ public class TransactionService {
     }
 
     public void updateWalletAndTransactions(Wallet wallet, BigDecimal winnings) {
-
-
         if (winnings.compareTo(BigDecimal.ZERO) > 0) {
             Transaction winTransaction = Transaction.builder()
                     .type(TransactionType.WIN)

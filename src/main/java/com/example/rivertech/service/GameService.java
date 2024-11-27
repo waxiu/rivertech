@@ -54,7 +54,7 @@ public class GameService {
 
         GameResult gameResult = generateGameResult(gameType, bet, betAmount, chosenNumber);
 
-        walletService.addWinningsToWallet(player.getWallet(), gameResult.getWinnings());
+        walletService.addFundsToWallet(player.getWallet(), gameResult.getWinnings());
 
         transactionService.updateWalletAndTransactions(player.getWallet(), gameResult.getWinnings());
 

@@ -26,6 +26,7 @@ public class Bet {
 
     private BigDecimal winnings;
 
+    @Enumerated(EnumType.STRING)
     private BetStatus status;
 
     @ManyToOne(fetch = FetchType.LAZY)

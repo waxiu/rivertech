@@ -21,20 +21,17 @@ public class PlayerService {
     }
 
     public Player registerPlayer(PlayerRegistrationDto dto) {
-        // Utwórz nowego gracza
-        Player player = new Player();
-        player.setName(dto.getName());
-        player.setSurname(dto.getSurname());
-        player.setUsername(dto.getUsername());
+        Player player = Player.builder()
+                .name(dto.getName())
+                .surname(dto.getSurname())
+                .username(dto.getUsername())
+                .build();
 
-        // Zapisz gracza w bazie
         Player savedPlayer = playerRepository.save(player);
 
-        // Utwórz portfel z początkowym stanem (np. 1000 kredytów)
         Wallet wallet = new Wallet(BigDecimal.valueOf(1000.00));
         wallet.setPlayer(savedPlayer);
 
-        // Zapisz portfel w bazie
         walletRepository.save(wallet);
 
         return savedPlayer;
