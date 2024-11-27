@@ -1,5 +1,6 @@
 package com.example.rivertech.service;
 
+import com.example.rivertech.dto.BetHistory;
 import com.example.rivertech.dto.GameResult;
 import com.example.rivertech.model.Bet;
 import com.example.rivertech.model.Player;
@@ -7,6 +8,8 @@ import com.example.rivertech.model.enums.BetStatus;
 import com.example.rivertech.repository.BetRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -25,7 +28,7 @@ public class BetService {
 
     public List<Bet> getBetsForPlayer(long playerId) {
         logger.info("Retrieving bets for playerId: {}", playerId);
-        List<Bet> bets = betRepository.findByPlayerId(playerId);
+        List<Bet> bets = betRepository.findAllByPlayerId(playerId);
         logger.debug("Found {} bets for playerId: {}", bets.size(), playerId);
         return bets;
     }
@@ -54,5 +57,18 @@ public class BetService {
         betRepository.save(bet);
         logger.info("Bet finalized with betId: {}, status: {}, winnings: {}",
                 bet.getId(), bet.getStatus(), bet.getWinnings());
+    }
+
+    public Page<BetHistory> getBetHistoryForPlayer(long playerId, Pageable pageable) {
+        logger.info("Fetching paginated bet history for playerId: {}, page: {}, size: {}",
+                playerId, pageable.getPageNumber(), pageable.getPageSize());
+
+        return betRepository.findByPlayerId(playerId, pageable)
+                .map(bet -> new BetHistory(
+                        bet.getBetAmount(),
+                        bet.getBetNumber(),
+                        bet.getGeneratedNumber(),
+                        bet.getWinnings(),
+                        bet.getStatus()));
     }
 }
