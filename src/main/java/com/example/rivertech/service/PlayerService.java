@@ -17,11 +17,12 @@ public class PlayerService {
     private static final Logger logger = LoggerFactory.getLogger(PlayerService.class);
 
     private final PlayerRepository playerRepository;
-    private final WalletRepository walletRepository;
 
-    public PlayerService(PlayerRepository playerRepository, WalletRepository walletRepository) {
+    private final WalletService walletService;
+
+    public PlayerService(PlayerRepository playerRepository, WalletService walletService) {
         this.playerRepository = playerRepository;
-        this.walletRepository = walletRepository;
+        this.walletService = walletService;
     }
 
     public Player registerPlayer(PlayerRegistrationDto dto) {
@@ -36,12 +37,20 @@ public class PlayerService {
         Player savedPlayer = playerRepository.save(player);
         logger.info("Player registered successfully with playerId: {}", savedPlayer.getId());
 
-        Wallet wallet = new Wallet(BigDecimal.valueOf(1000.00));
-        wallet.setPlayer(savedPlayer);
-
-        walletRepository.save(wallet);
-        logger.info("Wallet created with initial balance: {} for playerId: {}", wallet.getBalance(), savedPlayer.getId());
+        walletService.createWalletForPlayer(player);
 
         return savedPlayer;
+    }
+
+    public void depositToPlayerWallet(Long playerId, BigDecimal amount) {
+        logger.info("Starting deposit for playerId: {} with amount: {}", playerId, amount);
+        Player player = playerRepository.findById(playerId)
+                .orElseThrow(() -> {
+                    logger.error("Player with ID {} not found", playerId);
+                    return new IllegalArgumentException("Player not found with ID: " + playerId);
+                });
+        Wallet wallet = player.getWallet();
+        walletService.depositFunds(wallet, amount);
+        logger.info("Deposit to playerId: {} completed successfully", playerId);
     }
 }
