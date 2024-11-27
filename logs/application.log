@@ -1,0 +1,105 @@
+2024-11-27 12:01:23 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 12:01:23 [main] INFO  c.e.rivertech.RivertechApplication - Starting RivertechApplication using Java 21.0.5 with PID 16148 (C:\Users\KacperJakubowski\Desktop\project\rivertech\target\classes started by KacperJakubowski in C:\Users\KacperJakubowski\Desktop\project\rivertech)
+2024-11-27 12:01:23 [main] INFO  c.e.rivertech.RivertechApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145 ms. Found 4 JPA repository interfaces.
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-27 12:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-11-27 12:01:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-27 12:01:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 12:01:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-27 12:01:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 12:01:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-27 12:01:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1516 ms
+2024-11-27 12:01:25 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 12:01:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27 12:01:25 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-27 12:01:25 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 12:01:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-27 12:01:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@299eca90
+2024-11-27 12:01:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-27 12:01:25 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-27 12:01:25 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27 12:01:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 12:01:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 12:01:26 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-27 12:01:27 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 12:01:27 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-27 12:01:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 12:01:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 12:01:28 [main] INFO  c.e.rivertech.RivertechApplication - Started RivertechApplication in 5.549 seconds (process running for 6.341)
+2024-11-27 12:01:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:01:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:01:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:01:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:01:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:01:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:01:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:01:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:02:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:02:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Game initiated for playerId: 1, betAmount: 100.00, chosenNumber: 5, gameType: ODDS_BASED
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Creating pending bet for playerId: 1, betAmount: 100.00, chosenNumber: 5
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Pending bet created with betId: 22, playerId: 1
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Bet created with betId: 22 for playerId: 1
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 1500.00, total winnings: 3000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Funds deducted from walletId: 1 for amount: 100.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100.00 for walletId: 1
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Transaction created for walletId: 1, amount: 100.00, type: BET
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Game result generated with randomNumber: 5, winnings: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 2500.00, total winnings: 4000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Funds added to walletId: 1 for winnings: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.r.service.TransactionService - Win transaction created with amount: 1000.00 for walletId: 1
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Transactions updated for walletId: 1 with winnings: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Finalizing bet with betId: 22, for playerId: 1
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.BetService - Bet finalized with betId: 22, status: COMPLETED, winnings: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Bet finalized with betId: 22, status: COMPLETED, winnings: 1000.00
+2024-11-27 12:02:16 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.GameService - Game completed for playerId: 1, betId: 22
+2024-11-27 12:02:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:02:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:02:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:02:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:02:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:02:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:02:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:02:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:02:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:02:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:03:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:03:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:03:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:03:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:03:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:03:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:03:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:03:38 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:03:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:03:48 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:03:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:03:58 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:04:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:04:08 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:04:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:04:18 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-11-27 12:04:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-11-27 12:04:28 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
