@@ -1,6 +1,6 @@
 package com.example.rivertech.controller;
 
-import com.example.rivertech.dto.DepositRequest;
+import com.example.rivertech.dto.DepositRequestDto;
 import com.example.rivertech.dto.PlayerRegistrationDto;
 import com.example.rivertech.model.Bet;
 import com.example.rivertech.model.Player;
@@ -16,11 +16,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
-@RequestMapping("/players")
+@RequestMapping("/player")
 public class PlayerController {
 
     private static final Logger logger = LoggerFactory.getLogger(PlayerController.class);
@@ -39,7 +38,7 @@ public class PlayerController {
         Player registeredPlayer = playerService.registerPlayer(dto);
         return ResponseEntity.ok(registeredPlayer);
     }
-    @GetMapping("/player/{playerId}")
+    @GetMapping("/transactions/{playerId}")
     public ResponseEntity<Page<Transaction>> getTransactionsForPlayer(
             @PathVariable Long playerId,
             @RequestParam(defaultValue = "0") int page,
@@ -51,18 +50,18 @@ public class PlayerController {
 
         return ResponseEntity.ok(transactions);
     }
-    @GetMapping("/{playerId}/bets")
+    @GetMapping("/bets/{playerId}")
     public List<Bet> getBets(@PathVariable long playerId) {
         return betService.getBetsForPlayer(playerId);
     }
 
-    @PostMapping("/{playerId}/deposit")
+    @PostMapping("/deposit/{playerId}")
     public ResponseEntity<String> depositToWallet(
             @PathVariable Long playerId,
-            @RequestBody DepositRequest depositRequest) {
-        logger.info("Deposit request received for playerId: {} with amount: {}", playerId, depositRequest.getAmount());
+            @RequestBody DepositRequestDto depositRequestDto) {
+        logger.info("Deposit request received for playerId: {} with amount: {}", playerId, depositRequestDto.getAmount());
         try {
-            playerService.depositToPlayerWallet(playerId, depositRequest.getAmount());
+            playerService.depositToPlayerWallet(playerId, depositRequestDto.getAmount());
             logger.info("Deposit successful for playerId: {}", playerId);
             return ResponseEntity.ok("Deposit successful");
         } catch (IllegalArgumentException e) {

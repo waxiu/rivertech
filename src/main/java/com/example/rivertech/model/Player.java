@@ -6,11 +6,12 @@ import lombok.*;
 
 import java.util.List;
 
-@Data
-@Entity
-@Builder
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
+@Entity
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

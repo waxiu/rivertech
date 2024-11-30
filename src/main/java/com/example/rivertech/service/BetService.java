@@ -1,7 +1,7 @@
 package com.example.rivertech.service;
 
-import com.example.rivertech.dto.BetHistory;
-import com.example.rivertech.dto.GameResult;
+import com.example.rivertech.dto.BetHistoryDto;
+import com.example.rivertech.dto.GameResultDto;
 import com.example.rivertech.model.Bet;
 import com.example.rivertech.model.Player;
 import com.example.rivertech.model.Transaction;
@@ -35,6 +35,10 @@ public class BetService {
     }
 
     public Bet createPendingBet(Player player, BigDecimal betAmount, int chosenNumber, Transaction transaction) {
+        if (betAmount == null || betAmount.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Bet amount must be greater than zero.");
+        }
+
         logger.info("Creating pending bet for playerId: {}, betAmount: {}, chosenNumber: {}",
                 player.getId(), betAmount, chosenNumber);
         Bet bet = Bet.builder()
@@ -49,24 +53,24 @@ public class BetService {
         return savedBet;
     }
 
-    public void finalizeBet(Bet bet, GameResult gameResult) {
+    public void finalizeBet(Bet bet, GameResultDto gameResultDto) {
         logger.info("Finalizing bet with betId: {}, for playerId: {}", bet.getId(), bet.getPlayer().getId());
         logger.debug("Updating bet with generatedNumber: {}, winnings: {}",
-                gameResult.getGeneratedNumber(), gameResult.getWinnings());
+                gameResultDto.getGeneratedNumber(), gameResultDto.getWinnings());
         bet.setStatus(BetStatus.COMPLETED);
-        bet.setGeneratedNumber(gameResult.getGeneratedNumber());
-        bet.setWinnings(gameResult.getWinnings());
+        bet.setGeneratedNumber(gameResultDto.getGeneratedNumber());
+        bet.setWinnings(gameResultDto.getWinnings());
         betRepository.save(bet);
         logger.info("Bet finalized with betId: {}, status: {}, winnings: {}",
                 bet.getId(), bet.getStatus(), bet.getWinnings());
     }
 
-    public Page<BetHistory> getBetHistoryForPlayer(long playerId, Pageable pageable) {
+    public Page<BetHistoryDto> getBetHistoryForPlayer(long playerId, Pageable pageable) {
         logger.info("Fetching paginated bet history for playerId: {}, page: {}, size: {}",
                 playerId, pageable.getPageNumber(), pageable.getPageSize());
 
         return betRepository.findByPlayerId(playerId, pageable)
-                .map(bet -> new BetHistory(
+                .map(bet -> new BetHistoryDto(
                         bet.getBetAmount(),
                         bet.getBetNumber(),
                         bet.getGeneratedNumber(),

@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface BetRepository extends JpaRepository<Bet, Long> {
-    List<Bet> findAllByPlayerId(long playerId); // Pobiera zakłady gracza
+    List<Bet> findAllByPlayerId(long playerId);
         Page<Bet> findByPlayerId(long playerId, Pageable pageable);
 
 }
