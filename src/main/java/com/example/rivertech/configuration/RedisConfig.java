@@ -1,23 +1,22 @@
-package com.example.rivertech.configuration;
+package com.example.rivertech.configuration
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.GenericToStringSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
+import org.springframework.data.redis.connection.RedisConnectionFactory
+import org.springframework.data.redis.core.RedisTemplate
+import org.springframework.data.redis.serializer.GenericToStringSerializer
+import org.springframework.data.redis.serializer.StringRedisSerializer
 
 @Configuration
-public class RedisConfig {
-
+class RedisConfig {
     @Bean
-    public RedisTemplate<String, Long> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
-        RedisTemplate<String, Long> redisTemplate = new RedisTemplate<>();
-        redisTemplate.setConnectionFactory(redisConnectionFactory);
+    fun redisTemplate(redisConnectionFactory: RedisConnectionFactory?): RedisTemplate<String, Long> {
+        val redisTemplate = RedisTemplate<String, Long>()
+        redisTemplate.connectionFactory = redisConnectionFactory
 
-        redisTemplate.setKeySerializer(new StringRedisSerializer());
-        redisTemplate.setValueSerializer(new GenericToStringSerializer<>(Long.class));
+        redisTemplate.keySerializer = StringRedisSerializer()
+        redisTemplate.valueSerializer = GenericToStringSerializer(Long::class.java)
 
-        return redisTemplate;
+        return redisTemplate
     }
 }
