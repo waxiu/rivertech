@@ -28,6 +28,11 @@ public class PlayerService {
     public Player registerPlayer(PlayerRegistrationDto dto) {
         logger.info("Registering new player with username: {}", dto.getUsername());
 
+        if (playerRepository.findByUsername(dto.getUsername()).isPresent()) {
+            logger.warn("Username '{}' already exists", dto.getUsername());
+            throw new IllegalArgumentException("Username '" + dto.getUsername() + "' is already taken.");
+        }
+
         Player player = Player.builder()
                 .name(dto.getName())
                 .surname(dto.getSurname())

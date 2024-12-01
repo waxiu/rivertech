@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -20,7 +21,6 @@ import java.util.List;
 public class BetService {
 
     private static final Logger logger = LoggerFactory.getLogger(BetService.class);
-
     private final BetRepository betRepository;
 
     public BetService(BetRepository betRepository) {
@@ -34,8 +34,10 @@ public class BetService {
         return bets;
     }
 
+    @Transactional
     public Bet createPendingBet(Player player, BigDecimal betAmount, int chosenNumber, Transaction transaction) {
         if (betAmount == null || betAmount.compareTo(BigDecimal.ZERO) <= 0) {
+            logger.error("Invalid bet amount: {}", betAmount);
             throw new IllegalArgumentException("Bet amount must be greater than zero.");
         }
 
@@ -53,16 +55,22 @@ public class BetService {
         return savedBet;
     }
 
+    @Transactional
     public void finalizeBet(Bet bet, GameResultDto gameResultDto) {
         logger.info("Finalizing bet with betId: {}, for playerId: {}", bet.getId(), bet.getPlayer().getId());
-        logger.debug("Updating bet with generatedNumber: {}, winnings: {}",
-                gameResultDto.getGeneratedNumber(), gameResultDto.getWinnings());
+
+        if (bet.getStatus() != BetStatus.PENDING) {
+            logger.error("Attempted to finalize a non-pending bet with betId: {}", bet.getId());
+            throw new IllegalStateException("Bet can only be finalized if it is in a pending state.");
+        }
+
         bet.setStatus(BetStatus.COMPLETED);
         bet.setGeneratedNumber(gameResultDto.getGeneratedNumber());
         bet.setWinnings(gameResultDto.getWinnings());
-        betRepository.save(bet);
+        Bet updatedBet = betRepository.save(bet);
+
         logger.info("Bet finalized with betId: {}, status: {}, winnings: {}",
-                bet.getId(), bet.getStatus(), bet.getWinnings());
+                updatedBet.getId(), updatedBet.getStatus(), updatedBet.getWinnings());
     }
 
     public Page<BetHistoryDto> getBetHistoryForPlayer(long playerId, Pageable pageable) {

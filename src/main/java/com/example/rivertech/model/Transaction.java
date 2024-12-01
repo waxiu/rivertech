@@ -14,19 +14,20 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "transactions")
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Enumerated(EnumType.STRING)
-    private TransactionType type; // Np. "BET", "WIN", "DEPOSIT"
+    private TransactionType type;
 
-    private BigDecimal amount; // Kwota transakcji
+    private BigDecimal amount;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Builder.Default
-    private Date timestamp = new Date(); // Data utworzenia transakcji
+    private Date timestamp = new Date();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "wallet_id", nullable = false)

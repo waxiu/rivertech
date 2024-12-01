@@ -1,9 +1,12 @@
 package com.example.rivertech.game;
 
 import java.math.BigDecimal;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SimpleGameLogic implements GameLogic {
 
+    @Override
     public BigDecimal calculateWinnings(int randomNumber, int chosenNumber, BigDecimal betAmount) {
         int difference = Math.abs(randomNumber - chosenNumber);
         if (difference == 0) {
@@ -17,4 +20,3 @@ public class SimpleGameLogic implements GameLogic {
         }
     }
 }
-

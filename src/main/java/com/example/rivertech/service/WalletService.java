@@ -21,7 +21,7 @@ public class WalletService {
     }
 
     public Wallet createWalletForPlayer(Player player) {
-        Wallet wallet = new Wallet(new BigDecimal(1000));
+        Wallet wallet = new Wallet(new BigDecimal(1000), new BigDecimal(0));
         wallet.setPlayer(player);
         Wallet savedWallet = walletRepository.save(wallet);
         logger.info("Wallet created with initial balance: {} for playerId: {}", wallet.getBalance(), player.getId());

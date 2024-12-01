@@ -13,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "wallets")
 public class Wallet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,8 +24,9 @@ public class Wallet {
 
     private BigDecimal totalWinnings;
 
-    public Wallet(BigDecimal balance) {
+    public Wallet(BigDecimal balance, BigDecimal totalWinnings) {
         this.balance = balance;
+        this.totalWinnings = totalWinnings;
     }
 
     @OneToOne(fetch = FetchType.LAZY)
