@@ -27,10 +27,10 @@ public class BetService {
         this.betRepository = betRepository;
     }
 
-    public List<Bet> getBetsForPlayer(long playerId) {
+    public Page<Bet> getBetsForPlayer(long playerId, Pageable pageable) {
         logger.info("Retrieving bets for playerId: {}", playerId);
-        List<Bet> bets = betRepository.findAllByPlayerId(playerId);
-        logger.debug("Found {} bets for playerId: {}", bets.size(), playerId);
+        Page<Bet> bets = betRepository.findByPlayerId(playerId, pageable);
+        logger.debug("Fetching paginated bets for playerId: {}, page: {}, size: {}", playerId, pageable.getPageNumber(),pageable.getPageSize());
         return bets;
     }
 

@@ -111,7 +111,7 @@ public class GameService {
 
 
     public int generateRandomNumber() {
-        int randomNumber = new Random().nextInt(11);
+        int randomNumber = new Random().nextInt(10) + 1;
         logger.debug("Generated random number: {}", randomNumber);
         return randomNumber;
     }

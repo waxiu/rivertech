@@ -55,7 +55,7 @@ class GameServiceTest {
         BigDecimal winnings = new BigDecimal("1000");
 
         Player player = new Player();
-        Wallet wallet = new Wallet(new BigDecimal("1000"));
+        Wallet wallet = new Wallet(new BigDecimal("1000"),new BigDecimal("0"));
         player.setWallet(wallet);
 
         Transaction transaction = new Transaction();
@@ -109,7 +109,7 @@ class GameServiceTest {
         Long playerId = 1L;
         BigDecimal betAmount = new BigDecimal("1000");
         Player player = new Player();
-        Wallet wallet = new Wallet(new BigDecimal("500"));
+        Wallet wallet = new Wallet(new BigDecimal("500"),new BigDecimal("0"));
         player.setWallet(wallet);
 
         when(playerRepository.findById(playerId)).thenReturn(Optional.of(player));

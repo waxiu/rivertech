@@ -82,7 +82,7 @@ class TransactionServiceTest {
     @Test
     void shouldCreateBetTransaction() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal("500"));
+        Wallet wallet = new Wallet(new BigDecimal("500"), new BigDecimal("0"));
         wallet.setId(1L);
         BigDecimal betAmount = new BigDecimal("100");
 
@@ -106,7 +106,7 @@ class TransactionServiceTest {
     @Test
     void shouldUpdateWalletWithWinnings() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal("500"));
+        Wallet wallet = new Wallet(new BigDecimal("500"), new BigDecimal("0"));
         wallet.setId(1L);
         BigDecimal winnings = new BigDecimal("200");
 
@@ -130,7 +130,7 @@ class TransactionServiceTest {
     @Test
     void shouldNotUpdateWalletWhenNoWinnings() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal("500"));
+        Wallet wallet = new Wallet(new BigDecimal("500"), new BigDecimal("0"));
         wallet.setId(1L);
         BigDecimal winnings = BigDecimal.ZERO;
 

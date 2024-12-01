@@ -34,9 +34,9 @@ public class PlayerController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<Player> registerPlayer(@RequestBody PlayerRegistrationDto dto) {
+    public ResponseEntity<String> registerPlayer(@RequestBody PlayerRegistrationDto dto) {
         Player registeredPlayer = playerService.registerPlayer(dto);
-        return ResponseEntity.ok(registeredPlayer);
+        return ResponseEntity.ok("Player registered successfully");
     }
     @GetMapping("/transactions/{playerId}")
     public ResponseEntity<Page<Transaction>> getTransactionsForPlayer(
@@ -51,8 +51,13 @@ public class PlayerController {
         return ResponseEntity.ok(transactions);
     }
     @GetMapping("/bets/{playerId}")
-    public List<Bet> getBets(@PathVariable long playerId) {
-        return betService.getBetsForPlayer(playerId);
+    public ResponseEntity<Page<Bet>> getBetsForPlayer(
+            @PathVariable Long playerId,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        Page<Bet> bets = betService.getBetsForPlayer(playerId, pageable);
+        return ResponseEntity.ok(bets);
     }
 
     @PostMapping("/deposit/{playerId}")

@@ -31,7 +31,7 @@ class WalletServiceTest {
         // given
         Player player = new Player();
         player.setId(1L);
-        Wallet wallet = new Wallet(new BigDecimal(1000));
+        Wallet wallet = new Wallet(new BigDecimal(1000),new BigDecimal("0"));
         wallet.setPlayer(player);
 
         when(walletRepository.save(any(Wallet.class))).thenReturn(wallet);
@@ -48,7 +48,7 @@ class WalletServiceTest {
     @Test
     void shouldDeductFundsFromWallet() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal(1000));
+        Wallet wallet = new Wallet(new BigDecimal(1000),new BigDecimal("0"));
         wallet.setId(1L);
         wallet.setTotalWinnings(new BigDecimal(500));
         BigDecimal betAmount = new BigDecimal(100);
@@ -67,7 +67,7 @@ class WalletServiceTest {
     @Test
     void shouldAddFundsToWallet() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal(1000));
+        Wallet wallet = new Wallet(new BigDecimal(1000),new BigDecimal("0"));
         wallet.setId(1L);
         wallet.setTotalWinnings(new BigDecimal(500));
         BigDecimal winnings = new BigDecimal(200);
@@ -86,7 +86,7 @@ class WalletServiceTest {
     @Test
     void shouldDepositFunds() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal(1000));
+        Wallet wallet = new Wallet(new BigDecimal(1000),new BigDecimal("0"));
         wallet.setId(1L);
         BigDecimal depositAmount = new BigDecimal(300);
 
@@ -103,7 +103,7 @@ class WalletServiceTest {
     @Test
     void shouldThrowExceptionWhenDepositAmountIsInvalid() {
         // given
-        Wallet wallet = new Wallet(new BigDecimal(1000));
+        Wallet wallet = new Wallet(new BigDecimal(1000),new BigDecimal("0"));
         wallet.setId(1L);
         BigDecimal invalidDepositAmount = new BigDecimal(-100);
 

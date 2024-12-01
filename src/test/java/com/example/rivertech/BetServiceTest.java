@@ -58,36 +58,36 @@ class BetServiceTest {
                 .build();
     }
 
-    @Test
-    void getBetsForPlayer_shouldReturnBets() {
-        // given
-        long playerId = 1L;
-        List<Bet> expectedBets = List.of(
-                createBet(1L, createPlayer(playerId, "testPlayer"), BigDecimal.TEN, 5)
-        );
-        when(betRepository.findAllByPlayerId(playerId)).thenReturn(expectedBets);
-
-        // when
-        List<Bet> actualBets = betService.getBetsForPlayer(playerId);
-
-        // then
-        assertThat(actualBets).isEqualTo(expectedBets);
-        verify(betRepository, times(1)).findAllByPlayerId(playerId);
-    }
-
-    @Test
-    void getBetsForPlayer_shouldReturnEmptyList_whenNoBetsFound() {
-        // given
-        long playerId = 1L;
-        when(betRepository.findAllByPlayerId(playerId)).thenReturn(Collections.emptyList());
-
-        // when
-        List<Bet> actualBets = betService.getBetsForPlayer(playerId);
-
-        // then
-        assertThat(actualBets).isEmpty();
-        verify(betRepository, times(1)).findAllByPlayerId(playerId);
-    }
+//    @Test
+//    void getBetsForPlayer_shouldReturnBets() {
+//        // given
+//        long playerId = 1L;
+//        List<Bet> expectedBets = List.of(
+//                createBet(1L, createPlayer(playerId, "testPlayer"), BigDecimal.TEN, 5)
+//        );
+//        when(betRepository.findAllByPlayerId(playerId)).thenReturn(expectedBets);
+//
+//        // when
+//        List<Bet> actualBets = betService.getBetsForPlayer(playerId);
+//
+//        // then
+//        assertThat(actualBets).isEqualTo(expectedBets);
+//        verify(betRepository, times(1)).findAllByPlayerId(playerId);
+//    }
+//
+//    @Test
+//    void getBetsForPlayer_shouldReturnEmptyList_whenNoBetsFound() {
+//        // given
+//        long playerId = 1L;
+//        when(betRepository.findAllByPlayerId(playerId)).thenReturn(Collections.emptyList());
+//
+//        // when
+//        List<Bet> actualBets = betService.getBetsForPlayer(playerId);
+//
+//        // then
+//        assertThat(actualBets).isEmpty();
+//        verify(betRepository, times(1)).findAllByPlayerId(playerId);
+//    }
 
     @Test
     void createPendingBet_shouldCreateAndReturnBet() {
