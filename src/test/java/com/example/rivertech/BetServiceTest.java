@@ -58,36 +58,42 @@ class BetServiceTest {
                 .build();
     }
 
-//    @Test
-//    void getBetsForPlayer_shouldReturnBets() {
-//        // given
-//        long playerId = 1L;
-//        List<Bet> expectedBets = List.of(
-//                createBet(1L, createPlayer(playerId, "testPlayer"), BigDecimal.TEN, 5)
-//        );
-//        when(betRepository.findAllByPlayerId(playerId)).thenReturn(expectedBets);
-//
-//        // when
-//        List<Bet> actualBets = betService.getBetsForPlayer(playerId);
-//
-//        // then
-//        assertThat(actualBets).isEqualTo(expectedBets);
-//        verify(betRepository, times(1)).findAllByPlayerId(playerId);
-//    }
-//
-//    @Test
-//    void getBetsForPlayer_shouldReturnEmptyList_whenNoBetsFound() {
-//        // given
-//        long playerId = 1L;
-//        when(betRepository.findAllByPlayerId(playerId)).thenReturn(Collections.emptyList());
-//
-//        // when
-//        List<Bet> actualBets = betService.getBetsForPlayer(playerId);
-//
-//        // then
-//        assertThat(actualBets).isEmpty();
-//        verify(betRepository, times(1)).findAllByPlayerId(playerId);
-//    }
+    @Test
+    void getBetsForPlayer_shouldReturnBets() {
+        // given
+        long playerId = 1L;
+        Pageable pageable = PageRequest.of(0, 10);
+        List<Bet> betList = List.of(
+                createBet(1L, createPlayer(playerId, "testPlayer"), BigDecimal.TEN, 5)
+        );
+        Page<Bet> expectedBets = new PageImpl<>(betList, pageable, betList.size());
+        when(betRepository.findByPlayerId(playerId, pageable)).thenReturn(expectedBets);
+
+        // when
+        Page<Bet> actualBets = betService.getBetsForPlayer(playerId, pageable);
+
+        // then
+        assertThat(actualBets.getContent()).isEqualTo(expectedBets.getContent());
+        assertThat(actualBets.getTotalElements()).isEqualTo(expectedBets.getTotalElements());
+        verify(betRepository, times(1)).findByPlayerId(playerId, pageable);
+    }
+
+    @Test
+    void getBetsForPlayer_shouldReturnEmptyPage_whenNoBetsFound() {
+        // given
+        long playerId = 1L;
+        Pageable pageable = PageRequest.of(0, 10);
+        Page<Bet> emptyPage = new PageImpl<>(Collections.emptyList(), pageable, 0);
+        when(betRepository.findByPlayerId(playerId, pageable)).thenReturn(emptyPage);
+
+        // when
+        Page<Bet> actualBets = betService.getBetsForPlayer(playerId, pageable);
+
+        // then
+        assertThat(actualBets.getContent()).isEmpty();
+        assertThat(actualBets.getTotalElements()).isEqualTo(0);
+        verify(betRepository, times(1)).findByPlayerId(playerId, pageable);
+    }
 
     @Test
     void createPendingBet_shouldCreateAndReturnBet() {
@@ -125,7 +131,15 @@ class BetServiceTest {
     void finalizeBet_shouldUpdateBetAndSave() {
         // given
         Bet bet = createBet(1L, createPlayer(1L, "testPlayer"), BigDecimal.TEN, 5);
+        bet.setStatus(BetStatus.PENDING);
         GameResultDto gameResultDto = new GameResultDto(7, BigDecimal.valueOf(50));
+
+        Bet savedBet = createBet(1L, createPlayer(1L, "testPlayer"), BigDecimal.TEN, 5);
+        savedBet.setStatus(BetStatus.COMPLETED);
+        savedBet.setGeneratedNumber(gameResultDto.getGeneratedNumber());
+        savedBet.setWinnings(gameResultDto.getWinnings());
+
+        when(betRepository.save(any(Bet.class))).thenReturn(savedBet);
 
         // when
         betService.finalizeBet(bet, gameResultDto);
@@ -133,10 +147,12 @@ class BetServiceTest {
         // then
         verify(betRepository).save(betCaptor.capture());
         Bet capturedBet = betCaptor.getValue();
+
         assertThat(capturedBet.getStatus()).isEqualTo(BetStatus.COMPLETED);
         assertThat(capturedBet.getGeneratedNumber()).isEqualTo(gameResultDto.getGeneratedNumber());
         assertThat(capturedBet.getWinnings()).isEqualTo(gameResultDto.getWinnings());
     }
+
 
     @Test
     void getBetHistoryForPlayer_shouldReturnPaginatedBetHistory() {

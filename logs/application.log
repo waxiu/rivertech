@@ -2370,3 +2370,412 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer fou
 2024-12-01 13:53:20 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
 2024-12-01 13:53:30 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
 2024-12-01 13:53:30 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:53:40 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:53:40 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:53:50 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:53:50 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:54:00 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:54:00 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:54:10 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:54:10 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:54:20 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:54:20 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:54:28 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01 13:54:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-01 13:54:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 13:54:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-01 13:54:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-01 13:54:35 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-01 13:54:35 [main] INFO  c.e.rivertech.RivertechApplication - Starting RivertechApplication using Java 21.0.5 with PID 23672 (C:\Users\ivoja\Desktop\rivertech\target\classes started by ivoja in C:\Users\ivoja\Desktop\rivertech)
+2024-12-01 13:54:35 [main] INFO  c.e.rivertech.RivertechApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 4 JPA repository interfaces.
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:54:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-12-01 13:54:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-01 13:54:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-01 13:54:36 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-01 13:54:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01 13:54:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-01 13:54:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1061 ms
+2024-12-01 13:54:36 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-01 13:54:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-01 13:54:36 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-01 13:54:37 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01 13:54:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-01 13:54:37 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6eaf030c
+2024-12-01 13:54:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-01 13:54:37 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-01 13:54:37 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-01 13:54:38 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-01 13:54:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 13:54:38 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-01 13:54:38 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01 13:54:38 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-01 13:54:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-01 13:54:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-01 13:54:39 [main] INFO  c.e.rivertech.RivertechApplication - Started RivertechApplication in 3.907 seconds (process running for 4.325)
+2024-12-01 13:54:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:54:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:54:46 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01 13:54:46 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-01 13:54:46 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-01 13:54:46 [http-nio-8080-exec-2] INFO  c.e.rivertech.service.PlayerService - Registering new player with username: ivvo
+2024-12-01 13:54:46 [http-nio-8080-exec-2] WARN  c.e.rivertech.service.PlayerService - Username 'ivvo' already exists
+2024-12-01 13:54:46 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Username 'ivvo' is already taken.] with root cause
+java.lang.IllegalArgumentException: Username 'ivvo' is already taken.
+	at com.example.rivertech.service.PlayerService.registerPlayer(PlayerService.java:33)
+	at com.example.rivertech.controller.PlayerController.registerPlayer(PlayerController.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-12-01 13:54:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:54:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:54:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:54:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:55:04 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.PlayerService - Registering new player with username: ivvo2
+2024-12-01 13:55:04 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.PlayerService - Player registered successfully with playerId: 2
+2024-12-01 13:55:04 [http-nio-8080-exec-4] INFO  c.e.rivertech.service.WalletService - Wallet created with initial balance: 1000 for playerId: 2
+2024-12-01 13:55:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:55:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:55:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:55:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:55:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:55:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:55:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:55:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:55:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:55:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:55:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:55:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:56:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:56:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:56:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:56:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:56:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:56:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:56:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:56:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:56:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:56:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:56:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:56:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:57:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:57:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:57:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:57:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:57:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:57:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:57:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:57:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:57:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01 13:57:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-01 13:57:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 13:57:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-01 13:57:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-01 13:57:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-01 13:57:46 [main] INFO  c.e.rivertech.RivertechApplication - Starting RivertechApplication using Java 21.0.5 with PID 5372 (C:\Users\ivoja\Desktop\rivertech\target\classes started by ivoja in C:\Users\ivoja\Desktop\rivertech)
+2024-12-01 13:57:46 [main] INFO  c.e.rivertech.RivertechApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-01 13:57:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 13:57:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01 13:57:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 4 JPA repository interfaces.
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 13:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-12-01 13:57:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-01 13:57:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-01 13:57:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-01 13:57:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-01 13:57:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-01 13:57:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 993 ms
+2024-12-01 13:57:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-01 13:57:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-01 13:57:47 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-01 13:57:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01 13:57:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-01 13:57:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68479e8b
+2024-12-01 13:57:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-01 13:57:47 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-01 13:57:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-01 13:57:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-01 13:57:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 13:57:48 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-01 13:57:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01 13:57:49 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-01 13:57:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-01 13:57:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-01 13:57:49 [main] INFO  c.e.rivertech.RivertechApplication - Started RivertechApplication in 3.729 seconds (process running for 4.152)
+2024-12-01 13:57:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:57:50 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:57:57 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-01 13:57:57 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-01 13:57:57 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-01 13:57:57 [http-nio-8080-exec-3] INFO  c.e.rivertech.service.PlayerService - Registering new player with username: ivvo2
+2024-12-01 13:57:57 [http-nio-8080-exec-3] WARN  c.e.rivertech.service.PlayerService - Username 'ivvo2' already exists
+2024-12-01 13:57:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:57:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:58:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:58:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:58:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:58:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:58:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:58:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:58:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:58:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:58:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:58:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:58:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:58:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:59:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:59:09 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:59:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:59:19 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:59:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:59:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:59:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:59:39 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:59:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:59:49 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 13:59:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 13:59:59 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 14:00:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-01 14:00:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-01 14:00:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 14:00:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-01 14:00:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-01 14:00:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-01 14:00:25 [main] INFO  c.e.r.RivertechApplicationTests - Starting RivertechApplicationTests using Java 21.0.5 with PID 13120 (started by ivoja in C:\Users\ivoja\Desktop\rivertech)
+2024-12-01 14:00:25 [main] INFO  c.e.r.RivertechApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-12-01 14:00:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 14:00:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121 ms. Found 4 JPA repository interfaces.
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:00:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-12-01 14:00:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-01 14:00:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-01 14:00:26 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-01 14:00:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01 14:00:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-01 14:00:26 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a11efe6
+2024-12-01 14:00:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-01 14:00:26 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-01 14:00:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-01 14:00:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-01 14:00:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 14:00:28 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-01 14:00:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01 14:00:28 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-01 14:00:29 [main] INFO  c.e.r.RivertechApplicationTests - Started RivertechApplicationTests in 4.22 seconds (process running for 6.463)
+2024-12-01 14:00:29 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.LeaderboardService - Fetching top 3 players from leaderboard
+2024-12-01 14:00:29 [main] WARN  c.e.r.service.LeaderboardService - No players found in the leaderboard
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.LeaderboardService - Fetching top 3 players from leaderboard
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.LeaderboardService - Fetched 3 players from leaderboard
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Depositing amount: 300 to walletId: 1
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Deposit successful. New balance for walletId: 1 is 1300
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Wallet created with initial balance: 1000 for playerId: 1
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 900, total winnings: 400
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 200
+2024-12-01 14:00:29 [main] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 1200, total winnings: 700
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 200
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Win transaction created with amount: 200 for walletId: 1
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Fetching paginated transactions for playerId: 1, page: 0, size: 10
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Found 1 transactions for playerId: 1 on page: 0
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100 for walletId: 1
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Fetching paginated transactions for playerId: 1, page: 0, size: 10
+2024-12-01 14:00:29 [main] ERROR c.e.r.service.TransactionService - Player with ID 1 not found
+2024-12-01 14:00:29 [main] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-12-01 14:00:29 [main] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-12-01 14:00:30 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 14:00:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 14:00:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-01 14:00:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-01 14:03:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-01 14:03:39 [main] INFO  c.e.r.RivertechApplicationTests - Starting RivertechApplicationTests using Java 21.0.5 with PID 9064 (started by ivoja in C:\Users\ivoja\Desktop\rivertech)
+2024-12-01 14:03:39 [main] INFO  c.e.r.RivertechApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 4 JPA repository interfaces.
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.BetRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.PlayerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.rivertech.repository.WalletRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-01 14:03:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-12-01 14:03:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-01 14:03:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-01 14:03:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-01 14:03:40 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01 14:03:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-01 14:03:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d4b32d1
+2024-12-01 14:03:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-01 14:03:40 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-01 14:03:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-01 14:03:41 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-01 14:03:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 14:03:42 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-01 14:03:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01 14:03:42 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-01 14:03:43 [main] INFO  c.e.r.RivertechApplicationTests - Started RivertechApplicationTests in 4.272 seconds (process running for 6.327)
+2024-12-01 14:03:43 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 14:03:43 [main] INFO  c.e.r.service.LeaderboardService - Fetching top 3 players from leaderboard
+2024-12-01 14:03:43 [main] WARN  c.e.r.service.LeaderboardService - No players found in the leaderboard
+2024-12-01 14:03:43 [main] INFO  c.e.r.service.LeaderboardService - Fetching top 3 players from leaderboard
+2024-12-01 14:03:43 [main] INFO  c.e.r.service.LeaderboardService - Fetched 3 players from leaderboard
+2024-12-01 14:03:43 [main] INFO  c.e.r.service.LeaderboardService - Starting leaderboard update
+2024-12-01 14:03:43 [main] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Depositing amount: 300 to walletId: 1
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Deposit successful. New balance for walletId: 1 is 1300
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Wallet created with initial balance: 1000 for playerId: 1
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Deducting funds from walletId: 1, betAmount: 100
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Funds deducted successfully. WalletId: 1, new balance: 900, total winnings: 400
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Adding winnings to walletId: 1, amount: 200
+2024-12-01 14:03:43 [main] INFO  c.e.rivertech.service.WalletService - Winnings added successfully. WalletId: 1, new balance: 1200, total winnings: 700
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 200
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Win transaction created with amount: 200 for walletId: 1
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Fetching paginated transactions for playerId: 1, page: 0, size: 10
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Found 1 transactions for playerId: 1 on page: 0
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Creating bet transaction for walletId: 1, amount: 100
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Bet transaction created with amount: -100 for walletId: 1
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Fetching paginated transactions for playerId: 1, page: 0, size: 10
+2024-12-01 14:03:44 [main] ERROR c.e.r.service.TransactionService - Player with ID 1 not found
+2024-12-01 14:03:44 [main] INFO  c.e.r.service.TransactionService - Updating walletId: 1 with winnings: 0
+2024-12-01 14:03:44 [main] WARN  c.e.r.service.TransactionService - No winnings to update for walletId: 1
+2024-12-01 14:03:44 [scheduling-1] INFO  c.e.r.service.LeaderboardService - Leaderboard update completed
+2024-12-01 14:03:44 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 14:03:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-01 14:03:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

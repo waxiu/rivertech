@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,8 +36,12 @@ public class PlayerController {
 
     @PostMapping("/register")
     public ResponseEntity<String> registerPlayer(@RequestBody PlayerRegistrationDto dto) {
-        Player registeredPlayer = playerService.registerPlayer(dto);
-        return ResponseEntity.ok("Player registered successfully");
+        try {
+            Player registeredPlayer = playerService.registerPlayer(dto);
+            return ResponseEntity.ok("Player registered successfully");
+        } catch (IllegalArgumentException ex) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
+        }
     }
     @GetMapping("/transactions/{playerId}")
     public ResponseEntity<Page<Transaction>> getTransactionsForPlayer(
