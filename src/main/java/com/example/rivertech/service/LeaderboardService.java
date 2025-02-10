@@ -1,7 +1,7 @@
 package com.example.rivertech.service;
 
-import com.example.rivertech.model.Player;
-import com.example.rivertech.repository.PlayerRepository;
+import com.example.rivertech.model.User;
+import com.example.rivertech.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -20,39 +20,39 @@ public class LeaderboardService {
 
     private static final String REDIS_LEADERBOARD_KEY = "leaderboard";
     private final RedisTemplate<String, Long> redisTemplate;
-    private final PlayerRepository playerRepository;
+    private final UserRepository userRepository;
 
-    public LeaderboardService(RedisTemplate<String, Long> redisTemplate, PlayerRepository playerRepository) {
+    public LeaderboardService(RedisTemplate<String, Long> redisTemplate, UserRepository userRepository) {
         this.redisTemplate = redisTemplate;
-        this.playerRepository = playerRepository;
+        this.userRepository = userRepository;
     }
 
-    public Set<ZSetOperations.TypedTuple<Long>> getTopPlayers(int top) {
-        logger.info("Fetching top {} players from leaderboard", top);
-        Set<ZSetOperations.TypedTuple<Long>> topPlayers = redisTemplate.opsForZSet()
+    public Set<ZSetOperations.TypedTuple<Long>> getTopUsers(int top) {
+        logger.info("Fetching top {} users from leaderboard", top);
+        Set<ZSetOperations.TypedTuple<Long>> topUsers = redisTemplate.opsForZSet()
                 .reverseRangeWithScores(REDIS_LEADERBOARD_KEY, 0, Math.max(0, top - 1));
-        if (topPlayers.isEmpty()) {
-            logger.warn("No players found in the leaderboard");
+        if (topUsers.isEmpty()) {
+            logger.warn("No users found in the leaderboard");
         } else {
-            logger.info("Fetched {} players from leaderboard", topPlayers.size());
+            logger.info("Fetched {} users from leaderboard", topUsers.size());
         }
-        return topPlayers;
+        return topUsers;
     }
 
     @Scheduled(fixedRate = 10000)
     public void updateLeaderboardInBatch() {
         logger.info("Starting leaderboard update");
 
-        List<Player> players = playerRepository.findAll();
-        logger.debug("Fetched {} players from the database", players.size());
+        List<User> users = userRepository.findAll();
+        logger.debug("Fetched {} users from the database", users.size());
 
         redisTemplate.delete(REDIS_LEADERBOARD_KEY);
         logger.debug("Cleared old leaderboard from Redis");
 
-        for (Player player : players) {
-            BigDecimal totalWinnings = player.getWallet().getTotalWinnings();
-            redisTemplate.opsForZSet().add(REDIS_LEADERBOARD_KEY, player.getId(), totalWinnings.doubleValue());
-            logger.debug("Updated playerId: {} with totalWinnings: {} in leaderboard", player.getId(), totalWinnings);
+        for (User user : users) {
+            BigDecimal totalWinnings = user.getWallet().getTotalWinnings();
+            redisTemplate.opsForZSet().add(REDIS_LEADERBOARD_KEY, user.getId(), totalWinnings.doubleValue());
+            logger.debug("Updated userId: {} with totalWinnings: {} in leaderboard", user.getId(), totalWinnings);
         }
 
         logger.info("Leaderboard update completed");

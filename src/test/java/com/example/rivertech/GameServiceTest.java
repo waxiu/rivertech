@@ -5,7 +5,8 @@ import com.example.rivertech.game.GameLogic;
 import com.example.rivertech.game.GameLogicFactory;
 import com.example.rivertech.game.enums.GameType;
 import com.example.rivertech.model.*;
-import com.example.rivertech.repository.PlayerRepository;
+import com.example.rivertech.repository.UserRepository;
+import com.example.rivertech.repository.UserRepository;
 import com.example.rivertech.service.BetService;
 import com.example.rivertech.service.GameService;
 import com.example.rivertech.service.TransactionService;
@@ -30,7 +31,7 @@ class GameServiceTest {
     private GameLogicFactory gameLogicFactory;
 
     @Mock
-    private PlayerRepository playerRepository;
+    private UserRepository userRepository;
 
     @Mock
     private WalletService walletService;
@@ -45,35 +46,35 @@ class GameServiceTest {
     private GameService gameService;
 
     @Test
-    void playGame_shouldDeductFundsAndAddWinnings_whenPlayerWins() {
+    void playGame_shouldDeductFundsAndAddWinnings_whenUserWins() {
         // Arrange
-        Long playerId = 1L;
+        Long userId = 1L;
         BigDecimal betAmount = new BigDecimal("100");
         int chosenNumber = 5;
         GameType gameType = GameType.ODDS_BASED;
         int generatedNumber = 5; // Oczekiwana losowa liczba
         BigDecimal winnings = new BigDecimal("1000");
 
-        Player player = new Player();
+        User user = new User();
         Wallet wallet = new Wallet(new BigDecimal("1000"),new BigDecimal("0"));
-        player.setWallet(wallet);
+        user.setWallet(wallet);
 
         Transaction transaction = new Transaction();
         Bet bet = new Bet();
         GameLogic gameLogic = mock(GameLogic.class);
 
-        when(playerRepository.findById(playerId)).thenReturn(Optional.of(player));
+        when(userRepository.findById(userId)).thenReturn(Optional.of(user));
         when(gameLogicFactory.getGameLogic(gameType)).thenReturn(gameLogic);
         when(gameLogic.calculateWinnings(generatedNumber, chosenNumber, betAmount)).thenReturn(winnings);
         when(transactionService.createBetTransaction(wallet, betAmount)).thenReturn(transaction);
-        when(betService.createPendingBet(player, betAmount, chosenNumber, transaction)).thenReturn(bet);
+        when(betService.createPendingBet(user, betAmount, chosenNumber, transaction)).thenReturn(bet);
 
         // Mockowanie losowej liczby
         GameService gameServiceSpy = spy(gameService);
         doReturn(generatedNumber).when(gameServiceSpy).generateRandomNumber();
 
         // Act
-        GameResultDto result = gameServiceSpy.playGame(playerId, betAmount, chosenNumber, gameType);
+        GameResultDto result = gameServiceSpy.playGame(userId, betAmount, chosenNumber, gameType);
 
         // Assert
         assertThat(result.getGeneratedNumber()).isEqualTo(generatedNumber);
@@ -86,19 +87,19 @@ class GameServiceTest {
     }
 
     @Test
-    void playGame_shouldThrowException_whenPlayerNotFound() {
+    void playGame_shouldThrowException_whenUserNotFound() {
         // Arrange
-        Long playerId = 1L;
+        Long userId = 1L;
         BigDecimal betAmount = new BigDecimal("100");
         int chosenNumber = 5;
         GameType gameType = GameType.ODDS_BASED;
 
-        when(playerRepository.findById(playerId)).thenReturn(Optional.empty());
+        when(userRepository.findById(userId)).thenReturn(Optional.empty());
 
         // Act & Assert
-        assertThatThrownBy(() -> gameService.playGame(playerId, betAmount, chosenNumber, gameType))
+        assertThatThrownBy(() -> gameService.playGame(userId, betAmount, chosenNumber, gameType))
                 .isInstanceOf(RuntimeException.class)
-                .hasMessageContaining("Player not found");
+                .hasMessageContaining("User not found");
 
         verifyNoInteractions(walletService, transactionService, betService);
     }
@@ -106,16 +107,16 @@ class GameServiceTest {
     @Test
     void playGame_shouldThrowException_whenInsufficientFunds() {
         // Arrange
-        Long playerId = 1L;
+        Long userId = 1L;
         BigDecimal betAmount = new BigDecimal("1000");
-        Player player = new Player();
+        User user = new User();
         Wallet wallet = new Wallet(new BigDecimal("500"),new BigDecimal("0"));
-        player.setWallet(wallet);
+        user.setWallet(wallet);
 
-        when(playerRepository.findById(playerId)).thenReturn(Optional.of(player));
+        when(userRepository.findById(userId)).thenReturn(Optional.of(user));
 
         // Act & Assert
-        assertThatThrownBy(() -> gameService.playGame(playerId, betAmount, 5, GameType.ODDS_BASED))
+        assertThatThrownBy(() -> gameService.playGame(userId, betAmount, 5, GameType.ODDS_BASED))
                 .isInstanceOf(RuntimeException.class)
                 .hasMessageContaining("Insufficient funds");
 

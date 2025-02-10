@@ -1,10 +1,10 @@
 package com.example.rivertech;
 
-import com.example.rivertech.dto.PlayerRegistrationDto;
-import com.example.rivertech.model.Player;
+import com.example.rivertech.dto.UserRegistrationDto;
+import com.example.rivertech.model.User;
 import com.example.rivertech.model.Wallet;
-import com.example.rivertech.repository.PlayerRepository;
-import com.example.rivertech.service.PlayerService;
+import com.example.rivertech.repository.UserRepository;
+import com.example.rivertech.service.UserService;
 import com.example.rivertech.service.WalletService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,82 +21,82 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class PlayerServiceTest {
+class UserServiceTest {
 
     @Mock
-    private PlayerRepository playerRepository;
+    private UserRepository userRepository;
 
     @Mock
     private WalletService walletService;
 
     @InjectMocks
-    private PlayerService playerService;
+    private UserService userService;
     @Test
-    void shouldRegisterPlayerSuccessfully() {
+    void shouldRegisterUserSuccessfully() {
         // given
-        PlayerRegistrationDto dto = new PlayerRegistrationDto();
+        UserRegistrationDto dto = new UserRegistrationDto();
         dto.setName("John");
         dto.setSurname("Doe");
         dto.setUsername("john.doe");
 
-        Player mockPlayer = Player.builder()
+        User mockUser = User.builder()
                 .name(dto.getName())
                 .surname(dto.getSurname())
                 .username(dto.getUsername())
                 .build();
-        mockPlayer.setId(1L); // Ustawienie ID gracza po zapisaniu w repozytorium
+        mockUser.setId(1L); // Ustawienie ID gracza po zapisaniu w repozytorium
 
-        when(playerRepository.save(any(Player.class))).thenAnswer(invocation -> {
-            Player player = invocation.getArgument(0);
-            player.setId(1L); // Symulowanie ustawienia ID w repozytorium
-            return player;
+        when(userRepository.save(any(User.class))).thenAnswer(invocation -> {
+            User user = invocation.getArgument(0);
+            user.setId(1L); // Symulowanie ustawienia ID w repozytorium
+            return user;
         });
 
         // when
-        Player savedPlayer = playerService.registerPlayer(dto);
+        User savedUser = userService.registerUser(dto);
 
         // then
-        assertThat(savedPlayer).isNotNull();
-        assertThat(savedPlayer.getId()).isEqualTo(1L);
-        assertThat(savedPlayer.getName()).isEqualTo(dto.getName());
-        assertThat(savedPlayer.getSurname()).isEqualTo(dto.getSurname());
-        assertThat(savedPlayer.getUsername()).isEqualTo(dto.getUsername());
-        verify(playerRepository).save(any(Player.class));
-        verify(walletService).createWalletForPlayer(savedPlayer);
+        assertThat(savedUser).isNotNull();
+        assertThat(savedUser.getId()).isEqualTo(1L);
+        assertThat(savedUser.getName()).isEqualTo(dto.getName());
+        assertThat(savedUser.getSurname()).isEqualTo(dto.getSurname());
+        assertThat(savedUser.getUsername()).isEqualTo(dto.getUsername());
+        verify(userRepository).save(any(User.class));
+        verify(walletService).createWalletForUser(savedUser);
     }
 
     @Test
-    void shouldDepositToPlayerWalletSuccessfully() {
+    void shouldDepositToUserWalletSuccessfully() {
         // given
-        Long playerId = 1L;
+        Long userId = 1L;
         BigDecimal amount = BigDecimal.valueOf(100);
         Wallet wallet = new Wallet();
-        Player player = Player.builder().wallet(wallet).build();
+        User user = User.builder().wallet(wallet).build();
 
-        when(playerRepository.findById(playerId)).thenReturn(Optional.of(player));
+        when(userRepository.findById(userId)).thenReturn(Optional.of(user));
 
         // when
-        playerService.depositToPlayerWallet(playerId, amount);
+        userService.depositToUserWallet(userId, amount);
 
         // then
-        verify(playerRepository).findById(playerId);
+        verify(userRepository).findById(userId);
         verify(walletService).depositFunds(wallet, amount);
     }
 
     @Test
-    void shouldThrowExceptionWhenPlayerNotFoundForDeposit() {
+    void shouldThrowExceptionWhenUserNotFoundForDeposit() {
         // given
-        Long playerId = 99L;
+        Long userId = 99L;
         BigDecimal amount = BigDecimal.valueOf(50);
 
-        when(playerRepository.findById(playerId)).thenReturn(Optional.empty());
+        when(userRepository.findById(userId)).thenReturn(Optional.empty());
 
         // when/then
-        assertThatThrownBy(() -> playerService.depositToPlayerWallet(playerId, amount))
+        assertThatThrownBy(() -> userService.depositToUserWallet(userId, amount))
                 .isInstanceOf(IllegalArgumentException.class)
-                .hasMessage("Player not found with ID: " + playerId);
+                .hasMessage("User not found with ID: " + userId);
 
-        verify(playerRepository).findById(playerId);
+        verify(userRepository).findById(userId);
         verifyNoInteractions(walletService);
     }
 }

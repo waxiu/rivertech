@@ -3,7 +3,7 @@ package com.example.rivertech.service;
 import com.example.rivertech.model.Transaction;
 import com.example.rivertech.model.Wallet;
 import com.example.rivertech.model.enums.TransactionType;
-import com.example.rivertech.repository.PlayerRepository;
+import com.example.rivertech.repository.UserRepository;
 import com.example.rivertech.repository.TransactionRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,25 +20,25 @@ public class TransactionService {
     private static final Logger logger = LoggerFactory.getLogger(TransactionService.class);
 
     private final TransactionRepository transactionRepository;
-    private final PlayerRepository playerRepository;
+    private final UserRepository userRepository;
 
-    public TransactionService(TransactionRepository transactionRepository, PlayerRepository playerRepository) {
+    public TransactionService(TransactionRepository transactionRepository, UserRepository userRepository) {
         this.transactionRepository = transactionRepository;
-        this.playerRepository = playerRepository;
+        this.userRepository = userRepository;
     }
 
-    public Page<Transaction> getTransactionsForPlayer(Long playerId, Pageable pageable) {
-        logger.info("Fetching paginated transactions for playerId: {}, page: {}, size: {}",
-                playerId, pageable.getPageNumber(), pageable.getPageSize());
+    public Page<Transaction> getTransactionsForUser(Long userId, Pageable pageable) {
+        logger.info("Fetching paginated transactions for userId: {}, page: {}, size: {}",
+                userId, pageable.getPageNumber(), pageable.getPageSize());
 
-        if (!playerRepository.existsById(playerId)) {
-            logger.error("Player with ID {} not found", playerId);
-            throw new IllegalArgumentException("Player with ID " + playerId + " not found.");
+        if (!userRepository.existsById(userId)) {
+            logger.error("User with ID {} not found", userId);
+            throw new IllegalArgumentException("User with ID " + userId + " not found.");
         }
 
-        Page<Transaction> transactions = transactionRepository.findByPlayerId(playerId, pageable);
-        logger.info("Found {} transactions for playerId: {} on page: {}",
-                transactions.getTotalElements(), playerId, pageable.getPageNumber());
+        Page<Transaction> transactions = transactionRepository.findByUserId(userId, pageable);
+        logger.info("Found {} transactions for userId: {} on page: {}",
+                transactions.getTotalElements(), userId, pageable.getPageNumber());
         return transactions;
     }
 

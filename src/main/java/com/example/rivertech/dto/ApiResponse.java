@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PlayerRegistrationDto {
-    private String name;
-    private String surname;
-    private String username;
+public class ApiResponse <T>{
+    private boolean success;
+    private String message;
+    private T data;
 }

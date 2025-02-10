@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PlayerRankingDto {
-    private Long playerId;
+public class UserRankingDto {
+    private Long userId;
     private double score;
 }

@@ -1,10 +1,12 @@
 package com.example.rivertech.controller;
 
-import com.example.rivertech.dto.PlayerRankingDto;
+import com.example.rivertech.dto.ApiResponse;
+import com.example.rivertech.dto.UserRankingDto;
 import com.example.rivertech.service.LeaderboardService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.ZSetOperations;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,19 +29,19 @@ public class LeaderboardController {
     }
 
     @GetMapping("/winners")
-    public List<PlayerRankingDto> getLeaderboard(@RequestParam(defaultValue = "10") int top) {
-        logger.info("Fetching top {} players from the leaderboard", top);
+    public ResponseEntity<ApiResponse<List<UserRankingDto>>> getLeaderboard(@RequestParam(defaultValue = "10") int top) {
+        logger.info("Fetching top {} users from the leaderboard", top);
 
-        Set<ZSetOperations.TypedTuple<Long>> leaderboard = leaderboardService.getTopPlayers(top);
+        Set<ZSetOperations.TypedTuple<Long>> leaderboard = leaderboardService.getTopUsers(top);
 
-        List<PlayerRankingDto> rankings = leaderboard.stream()
-                .map(entry -> new PlayerRankingDto(
-                        entry.getValue(),  // playerId
+        List<UserRankingDto> rankings = leaderboard.stream()
+                .map(entry -> new UserRankingDto(
+                        entry.getValue(),  // userId
                         entry.getScore()   // score
                 ))
                 .collect(Collectors.toList());
 
         logger.info("Leaderboard fetched successfully, returning {} entries", rankings.size());
-        return rankings;
+        return ResponseEntity.ok(new ApiResponse<>(true, "Leaderboard fetched successfully", rankings));
     }
 }

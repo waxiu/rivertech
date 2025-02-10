@@ -1,5 +1,6 @@
 package com.example.rivertech.controller;
 
+import com.example.rivertech.dto.ApiResponse;
 import com.example.rivertech.dto.BetHistoryDto;
 import com.example.rivertech.dto.BetRequestDto;
 import com.example.rivertech.dto.GameResultDto;
@@ -31,32 +32,32 @@ public class BetController {
 
 
     @PostMapping("/place")
-    public ResponseEntity<GameResultDto> placeBet(@RequestBody BetRequestDto betRequestDto) {
-        logger.info("Placing a bet: playerId={}, betAmount={}, betNumber={}, gameType={}",
-                betRequestDto.getPlayerId(), betRequestDto.getBetAmount(), betRequestDto.getBetNumber(), betRequestDto.getGameType());
+    public ResponseEntity<ApiResponse<GameResultDto>> placeBet(@RequestBody BetRequestDto betRequestDto) {
+        logger.info("Placing a bet: userId={}, betAmount={}, betNumber={}, gameType={}",
+                betRequestDto.getUserId(), betRequestDto.getBetAmount(), betRequestDto.getBetNumber(), betRequestDto.getGameType());
 
         GameResultDto result = gameService.playGame(
-                betRequestDto.getPlayerId(),
+                betRequestDto.getUserId(),
                 betRequestDto.getBetAmount(),
                 betRequestDto.getBetNumber(),
                 betRequestDto.getGameType()
         );
 
         logger.info("Bet placed successfully: {}", result);
-        return ResponseEntity.ok(result);
+        return ResponseEntity.ok(new ApiResponse<>(true, "Bet placed successfully", result));
     }
 
-    @GetMapping("/history/{playerId}")
-    public ResponseEntity<Page<BetHistoryDto>> getBetHistory(
-            @PathVariable long playerId,
+    @GetMapping("/history/{userId}")
+    public ResponseEntity<ApiResponse<Page<BetHistoryDto>>>getBetHistory(
+            @PathVariable long userId,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
-        logger.info("Requesting bet history: playerId={}, page={}, size={}", playerId, page, size);
+        logger.info("Requesting bet history: userId={}, page={}, size={}", userId, page, size);
 
         Pageable pageable = PageRequest.of(page, size);
-        Page<BetHistoryDto> betHistory = betService.getBetHistoryForPlayer(playerId, pageable);
+        Page<BetHistoryDto> betHistory = betService.getBetHistoryForUser(userId, pageable);
 
-        logger.info("Bet history retrieved successfully for playerId: {}", playerId);
-        return ResponseEntity.ok(betHistory);
+        logger.info("Bet history retrieved successfully for userId: {}", userId);
+        return ResponseEntity.ok(new ApiResponse<>(true, "Bet history retrieved successfully", betHistory));
     }
 }

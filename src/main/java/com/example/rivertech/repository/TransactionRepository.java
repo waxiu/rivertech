@@ -16,8 +16,8 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
     @Query("""
         SELECT t FROM Transaction t
         JOIN t.wallet w
-        JOIN w.player p
-        WHERE p.id = :playerId
+        JOIN w.user p
+        WHERE p.id = :userId
        """)
-    Page<Transaction> findByPlayerId(@Param("playerId") Long playerId, Pageable pageable);
+    Page<Transaction> findByUserId(@Param("userId") Long userId, Pageable pageable);
     }

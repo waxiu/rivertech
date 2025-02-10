@@ -5,12 +5,12 @@ import com.example.rivertech.game.GameLogic;
 import com.example.rivertech.game.GameLogicFactory;
 import com.example.rivertech.game.enums.GameType;
 import com.example.rivertech.model.Bet;
-import com.example.rivertech.model.Player;
+import com.example.rivertech.model.User;
 import com.example.rivertech.model.Transaction;
 import com.example.rivertech.model.Wallet;
 import com.example.rivertech.model.enums.BetStatus;
 import com.example.rivertech.model.enums.TransactionType;
-import com.example.rivertech.repository.PlayerRepository;
+import com.example.rivertech.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -24,38 +24,38 @@ public class GameService {
     private static final Logger logger = LoggerFactory.getLogger(GameService.class);
 
     private final GameLogicFactory gameLogicFactory;
-    private final PlayerRepository playerRepository;
+    private final UserRepository userRepository;
     private final WalletService walletService;
     private final BetService betService;
     private final TransactionService transactionService;
 
     public GameService(GameLogicFactory gameLogicFactory,
-                       PlayerRepository playerRepository,
+                       UserRepository userRepository,
                        WalletService walletService,
                        BetService betService,
                        TransactionService transactionService) {
         this.gameLogicFactory = gameLogicFactory;
-        this.playerRepository = playerRepository;
+        this.userRepository = userRepository;
         this.walletService = walletService;
         this.betService = betService;
         this.transactionService = transactionService;
     }
 
-    public GameResultDto playGame(Long playerId, BigDecimal betAmount, int chosenNumber, GameType gameType) {
-        logger.info("Game initiated for playerId: {}, betAmount: {}, chosenNumber: {}, gameType: {}",
-                playerId, betAmount, chosenNumber, gameType);
+    public GameResultDto playGame(Long userId, BigDecimal betAmount, int chosenNumber, GameType gameType) {
+        logger.info("Game initiated for userId: {}, betAmount: {}, chosenNumber: {}, gameType: {}",
+                userId, betAmount, chosenNumber, gameType);
 
-        Player player = validatePlayerAndBalance(playerId, betAmount);
+        User user = validateUserAndBalance(userId, betAmount);
 
-        walletService.deductFundsFromWallet(player.getWallet(), betAmount);
-        logger.info("Funds deducted from walletId: {} for amount: {}", player.getWallet().getId(), betAmount);
+        walletService.deductFundsFromWallet(user.getWallet(), betAmount);
+        logger.info("Funds deducted from walletId: {} for amount: {}", user.getWallet().getId(), betAmount);
 
-        Transaction transaction = transactionService.createBetTransaction(player.getWallet(), betAmount);
+        Transaction transaction = transactionService.createBetTransaction(user.getWallet(), betAmount);
         logger.info("Transaction created for walletId: {}, amount: {}, type: {}",
-                player.getWallet().getId(), betAmount, TransactionType.BET);
+                user.getWallet().getId(), betAmount, TransactionType.BET);
 
-        Bet bet = betService.createPendingBet(player, betAmount, chosenNumber, transaction);
-        logger.info("Bet created with betId: {} for playerId: {}", bet.getId(), playerId);
+        Bet bet = betService.createPendingBet(user, betAmount, chosenNumber, transaction);
+        logger.info("Bet created with betId: {} for userId: {}", bet.getId(), userId);
 
         // Generate random number once
         int randomNumber = generateRandomNumber();
@@ -64,37 +64,37 @@ public class GameService {
         logger.info("Game result generated with randomNumber: {}, winnings: {}",
                 gameResultDto.getGeneratedNumber(), gameResultDto.getWinnings());
 
-        walletService.addFundsToWallet(player.getWallet(), gameResultDto.getWinnings());
-        logger.info("Funds added to walletId: {} for winnings: {}", player.getWallet().getId(), gameResultDto.getWinnings());
+        walletService.addFundsToWallet(user.getWallet(), gameResultDto.getWinnings());
+        logger.info("Funds added to walletId: {} for winnings: {}", user.getWallet().getId(), gameResultDto.getWinnings());
 
-        transactionService.updateWalletAndTransactions(player.getWallet(), gameResultDto.getWinnings());
+        transactionService.updateWalletAndTransactions(user.getWallet(), gameResultDto.getWinnings());
         logger.info("Transactions updated for walletId: {} with winnings: {}",
-                player.getWallet().getId(), gameResultDto.getWinnings());
+                user.getWallet().getId(), gameResultDto.getWinnings());
 
         betService.finalizeBet(bet, gameResultDto);
         logger.info("Bet finalized with betId: {}, status: {}, winnings: {}",
                 bet.getId(), BetStatus.COMPLETED, bet.getWinnings());
 
-        logger.info("Game completed for playerId: {}, betId: {}", playerId, bet.getId());
+        logger.info("Game completed for userId: {}, betId: {}", user, bet.getId());
         return gameResultDto;
     }
 
-    private Player validatePlayerAndBalance(Long playerId, BigDecimal betAmount) {
-        logger.debug("Validating playerId: {} and balance for betAmount: {}", playerId, betAmount);
-        Player player = playerRepository.findById(playerId)
+    private User validateUserAndBalance(Long userId, BigDecimal betAmount) {
+        logger.debug("Validating userId: {} and balance for betAmount: {}", userId, betAmount);
+        User user = userRepository.findById(userId)
                 .orElseThrow(() -> {
-                    logger.error("Player with playerId: {} not found", playerId);
-                    return new RuntimeException("Player not found");
+                    logger.error("User with userId: {} not found", userId);
+                    return new RuntimeException("User not found");
                 });
-        Wallet wallet = player.getWallet();
+        Wallet wallet = user.getWallet();
 
         if (wallet.getBalance().compareTo(betAmount) < 0) {
-            logger.error("Insufficient funds for playerId: {}, walletId: {}, balance: {}, betAmount: {}",
-                    playerId, wallet.getId(), wallet.getBalance(), betAmount);
+            logger.error("Insufficient funds for userId: {}, walletId: {}, balance: {}, betAmount: {}",
+                    userId, wallet.getId(), wallet.getBalance(), betAmount);
             throw new RuntimeException("Insufficient funds");
         }
-        logger.debug("Player validated with playerId: {} and sufficient balance", playerId);
-        return player;
+        logger.debug("User validated with userId: {} and sufficient balance", userId);
+        return user;
     }
 
     private GameResultDto generateGameResult(GameType gameType, Bet bet, BigDecimal betAmount, int chosenNumber, int randomNumber) {

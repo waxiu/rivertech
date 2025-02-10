@@ -1,6 +1,6 @@
 package com.example.rivertech;
 
-import com.example.rivertech.model.Player;
+import com.example.rivertech.model.User;
 import com.example.rivertech.model.Wallet;
 import com.example.rivertech.repository.WalletRepository;
 import com.example.rivertech.service.WalletService;
@@ -27,20 +27,20 @@ class WalletServiceTest {
     private WalletService walletService;
 
     @Test
-    void shouldCreateWalletForPlayer() {
+    void shouldCreateWalletForUser() {
         // given
-        Player player = new Player();
-        player.setId(1L);
+        User user = new User();
+        user.setId(1L);
         Wallet wallet = new Wallet(new BigDecimal(1000),new BigDecimal("0"));
-        wallet.setPlayer(player);
+        wallet.setUser(user);
 
         when(walletRepository.save(any(Wallet.class))).thenReturn(wallet);
 
         // when
-        Wallet result = walletService.createWalletForPlayer(player);
+        Wallet result = walletService.createWalletForUser(user);
 
         // then
-        assertThat(result.getPlayer()).isEqualTo(player);
+        assertThat(result.getUser()).isEqualTo(user);
         assertThat(result.getBalance()).isEqualTo(new BigDecimal(1000));
         verify(walletRepository).save(any(Wallet.class));
     }

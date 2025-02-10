@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface BetRepository extends JpaRepository<Bet, Long> {
-    List<Bet> findAllByPlayerId(long playerId);
-    Page<Bet> findByPlayerId(long playerId, Pageable pageable);
+    List<Bet> findAllByUserId(long userId);
+    Page<Bet> findByUserId(long userId, Pageable pageable);
 
 }

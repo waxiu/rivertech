@@ -1,6 +1,6 @@
 package com.example.rivertech.service;
 
-import com.example.rivertech.model.Player;
+import com.example.rivertech.model.User;
 import com.example.rivertech.model.Wallet;
 import com.example.rivertech.repository.WalletRepository;
 import org.slf4j.Logger;
@@ -20,11 +20,11 @@ public class WalletService {
         this.walletRepository = walletRepository;
     }
 
-    public Wallet createWalletForPlayer(Player player) {
+    public Wallet createWalletForUser(User user) {
         Wallet wallet = new Wallet(new BigDecimal(1000), new BigDecimal(0));
-        wallet.setPlayer(player);
+        wallet.setUser(user);
         Wallet savedWallet = walletRepository.save(wallet);
-        logger.info("Wallet created with initial balance: {} for playerId: {}", wallet.getBalance(), player.getId());
+        logger.info("Wallet created with initial balance: {} for userId: {}", wallet.getBalance(), user.getId());
         return savedWallet;
     }
     public void deductFundsFromWallet(Wallet wallet, BigDecimal betAmount) {

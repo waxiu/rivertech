@@ -3,7 +3,7 @@ package com.example.rivertech;
 import com.example.rivertech.model.Transaction;
 import com.example.rivertech.model.Wallet;
 import com.example.rivertech.model.enums.TransactionType;
-import com.example.rivertech.repository.PlayerRepository;
+import com.example.rivertech.repository.UserRepository;
 import com.example.rivertech.repository.TransactionRepository;
 import com.example.rivertech.service.TransactionService;
 import org.junit.jupiter.api.Test;
@@ -34,15 +34,15 @@ class TransactionServiceTest {
     private TransactionRepository transactionRepository;
 
     @Mock
-    private PlayerRepository playerRepository;
+    private UserRepository userRepository;
 
     @InjectMocks
     private TransactionService transactionService;
 
     @Test
-    void shouldFetchTransactionsForPlayer() {
+    void shouldFetchTransactionsForUser() {
         // given
-        Long playerId = 1L;
+        Long userId = 1L;
         Pageable pageable = PageRequest.of(0, 10);
         Transaction transaction = Transaction.builder()
                 .type(TransactionType.BET)
@@ -50,32 +50,32 @@ class TransactionServiceTest {
                 .build();
         Page<Transaction> transactions = new PageImpl<>(List.of(transaction));
 
-        when(playerRepository.existsById(playerId)).thenReturn(true);
-        when(transactionRepository.findByPlayerId(eq(playerId), eq(pageable))).thenReturn(transactions);
+        when(userRepository.existsById(userId)).thenReturn(true);
+        when(transactionRepository.findByUserId(eq(userId), eq(pageable))).thenReturn(transactions);
 
         // when
-        Page<Transaction> result = transactionService.getTransactionsForPlayer(playerId, pageable);
+        Page<Transaction> result = transactionService.getTransactionsForUser(userId, pageable);
 
         // then
         assertThat(result.getContent()).hasSize(1);
         assertThat(result.getContent().get(0).getType()).isEqualTo(TransactionType.BET);
-        verify(playerRepository).existsById(playerId);
-        verify(transactionRepository).findByPlayerId(playerId, pageable);
+        verify(userRepository).existsById(userId);
+        verify(transactionRepository).findByUserId(userId, pageable);
     }
 
     @Test
-    void shouldThrowExceptionWhenPlayerNotFound() {
+    void shouldThrowExceptionWhenUserNotFound() {
         // given
-        Long playerId = 1L;
+        Long userId = 1L;
         Pageable pageable = PageRequest.of(0, 10);
 
-        when(playerRepository.existsById(playerId)).thenReturn(false);
+        when(userRepository.existsById(userId)).thenReturn(false);
 
         // when / then
-        assertThatThrownBy(() -> transactionService.getTransactionsForPlayer(playerId, pageable))
+        assertThatThrownBy(() -> transactionService.getTransactionsForUser(userId, pageable))
                 .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("Player with ID " + playerId + " not found");
-        verify(playerRepository).existsById(playerId);
+                .hasMessageContaining("User with ID " + userId + " not found");
+        verify(userRepository).existsById(userId);
         verifyNoInteractions(transactionRepository);
     }
 

@@ -1,8 +1,9 @@
 package com.example.rivertech;
 
-import com.example.rivertech.model.Player;
+import com.example.rivertech.model.User;
 import com.example.rivertech.model.Wallet;
-import com.example.rivertech.repository.PlayerRepository;
+import com.example.rivertech.repository.UserRepository;
+import com.example.rivertech.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -33,7 +34,7 @@ class LeaderboardServiceTest {
     private ZSetOperations<String, Long> zSetOperations;
 
     @Mock
-    private PlayerRepository playerRepository;
+    private UserRepository userRepository;
 
     @InjectMocks
     private LeaderboardService leaderboardService;
@@ -44,7 +45,7 @@ class LeaderboardServiceTest {
     }
 
     @Test
-    void shouldFetchTopPlayersFromLeaderboard() {
+    void shouldFetchTopUsersFromLeaderboard() {
         // given
         int top = 3;
         Set<ZSetOperations.TypedTuple<Long>> mockLeaderboard = Set.of(
@@ -57,11 +58,11 @@ class LeaderboardServiceTest {
                 .thenReturn(mockLeaderboard);
 
         // when
-        Set<ZSetOperations.TypedTuple<Long>> topPlayers = leaderboardService.getTopPlayers(top);
+        Set<ZSetOperations.TypedTuple<Long>> topUsers = leaderboardService.getTopUsers(top);
 
         // then
-        assertThat(topPlayers).hasSize(3);
-        assertThat(topPlayers).extracting(ZSetOperations.TypedTuple::getValue).containsExactlyInAnyOrder(1L, 2L, 3L);
+        assertThat(topUsers).hasSize(3);
+        assertThat(topUsers).extracting(ZSetOperations.TypedTuple::getValue).containsExactlyInAnyOrder(1L, 2L, 3L);
         verify(zSetOperations).reverseRangeWithScores(REDIS_LEADERBOARD_KEY, 0, top - 1);
     }
 
@@ -72,27 +73,27 @@ class LeaderboardServiceTest {
         when(zSetOperations.reverseRangeWithScores(REDIS_LEADERBOARD_KEY, 0, top - 1)).thenReturn(Set.of());
 
         // when
-        Set<ZSetOperations.TypedTuple<Long>> topPlayers = leaderboardService.getTopPlayers(top);
+        Set<ZSetOperations.TypedTuple<Long>> topUsers = leaderboardService.getTopUsers(top);
 
         // then
-        assertThat(topPlayers).isEmpty();
+        assertThat(topUsers).isEmpty();
         verify(zSetOperations).reverseRangeWithScores(REDIS_LEADERBOARD_KEY, 0, top - 1);
     }
 
     @Test
     void shouldUpdateLeaderboardInBatch() {
         // given
-        Player player1 = createMockPlayer(1L, BigDecimal.valueOf(100.0));
-        Player player2 = createMockPlayer(2L, BigDecimal.valueOf(200.0));
+        User user1 = createMockUser(1L, BigDecimal.valueOf(100.0));
+        User user2 = createMockUser(2L, BigDecimal.valueOf(200.0));
 
-        when(playerRepository.findAll()).thenReturn(List.of(player1, player2));
+        when(userRepository.findAll()).thenReturn(List.of(user1, user2));
         when(redisTemplate.delete(REDIS_LEADERBOARD_KEY)).thenReturn(true); // Zamiast doNothing()
 
         // when
         leaderboardService.updateLeaderboardInBatch();
 
         // then
-        verify(playerRepository).findAll();
+        verify(userRepository).findAll();
         verify(redisTemplate).delete(REDIS_LEADERBOARD_KEY);
         verify(zSetOperations).add(REDIS_LEADERBOARD_KEY, 1L, 100.0);
         verify(zSetOperations).add(REDIS_LEADERBOARD_KEY, 2L, 200.0);
@@ -107,14 +108,14 @@ class LeaderboardServiceTest {
     }
 
 
-    private Player createMockPlayer(Long id, BigDecimal totalWinnings) {
+    private User createMockUser(Long id, BigDecimal totalWinnings) {
         Wallet wallet = mock(Wallet.class);
         when(wallet.getTotalWinnings()).thenReturn(totalWinnings);
 
-        Player player = mock(Player.class);
-        when(player.getId()).thenReturn(id);
-        when(player.getWallet()).thenReturn(wallet);
+        User user = mock(User.class);
+        when(user.getId()).thenReturn(id);
+        when(user.getWallet()).thenReturn(wallet);
 
-        return player;
+        return user;
     }
 }
