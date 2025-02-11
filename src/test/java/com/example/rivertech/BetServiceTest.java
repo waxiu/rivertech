@@ -1,14 +1,14 @@
-package com.example.rivertech;
+package com.example.sportbet;
 
-import com.example.rivertech.dto.BetHistoryDto;
-import com.example.rivertech.dto.GameResultDto;
-import com.example.rivertech.model.Bet;
-import com.example.rivertech.model.User;
-import com.example.rivertech.model.Transaction;
-import com.example.rivertech.model.User;
-import com.example.rivertech.model.enums.BetStatus;
-import com.example.rivertech.repository.BetRepository;
-import com.example.rivertech.service.BetService;
+import com.example.sportbet.dto.BetHistoryDto;
+import com.example.sportbet.dto.GameResultDto;
+import com.example.sportbet.model.Bet;
+import com.example.sportbet.model.User;
+import com.example.sportbet.model.Transaction;
+import com.example.sportbet.model.User;
+import com.example.sportbet.model.enums.BetStatus;
+import com.example.sportbet.repository.BetRepository;
+import com.example.sportbet.service.BetService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;

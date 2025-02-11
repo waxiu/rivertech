@@ -1,10 +1,10 @@
-package com.example.rivertech;
+package com.example.sportbet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RivertechApplicationTests {
+class sportbetApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,9 +1,9 @@
-package com.example.rivertech;
+package com.example.sportbet;
 
-import com.example.rivertech.model.User;
-import com.example.rivertech.model.Wallet;
-import com.example.rivertech.repository.UserRepository;
-import com.example.rivertech.repository.UserRepository;
+import com.example.sportbet.model.User;
+import com.example.sportbet.model.Wallet;
+import com.example.sportbet.repository.UserRepository;
+import com.example.sportbet.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -13,7 +13,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
-import com.example.rivertech.service.LeaderboardService;
+import com.example.sportbet.service.LeaderboardService;
 
 import java.math.BigDecimal;
 import java.util.List;

@@ -1,11 +1,11 @@
-package com.example.rivertech;
+package com.example.sportbet;
 
-import com.example.rivertech.model.Transaction;
-import com.example.rivertech.model.Wallet;
-import com.example.rivertech.model.enums.TransactionType;
-import com.example.rivertech.repository.UserRepository;
-import com.example.rivertech.repository.TransactionRepository;
-import com.example.rivertech.service.TransactionService;
+import com.example.sportbet.model.Transaction;
+import com.example.sportbet.model.Wallet;
+import com.example.sportbet.model.enums.TransactionType;
+import com.example.sportbet.repository.UserRepository;
+import com.example.sportbet.repository.TransactionRepository;
+import com.example.sportbet.service.TransactionService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

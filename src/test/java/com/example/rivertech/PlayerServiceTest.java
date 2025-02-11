@@ -1,11 +1,11 @@
-package com.example.rivertech;
+package com.example.sportbet;
 
-import com.example.rivertech.dto.UserRegistrationDto;
-import com.example.rivertech.model.User;
-import com.example.rivertech.model.Wallet;
-import com.example.rivertech.repository.UserRepository;
-import com.example.rivertech.service.UserService;
-import com.example.rivertech.service.WalletService;
+import com.example.sportbet.dto.UserRegistrationDto;
+import com.example.sportbet.model.User;
+import com.example.sportbet.model.Wallet;
+import com.example.sportbet.repository.UserRepository;
+import com.example.sportbet.service.UserService;
+import com.example.sportbet.service.WalletService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
