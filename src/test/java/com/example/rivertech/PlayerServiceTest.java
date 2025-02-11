@@ -1,6 +1,6 @@
 package com.example.sportbet;
 
-import com.example.sportbet.dto.UserRegistrationDto;
+import com.example.sportbet.dto.response.UserRegistrationRequestDto;
 import com.example.sportbet.model.User;
 import com.example.sportbet.model.Wallet;
 import com.example.sportbet.repository.UserRepository;
@@ -34,7 +34,7 @@ class UserServiceTest {
     @Test
     void shouldRegisterUserSuccessfully() {
         // given
-        UserRegistrationDto dto = new UserRegistrationDto();
+        UserRegistrationRequestDto dto = new UserRegistrationRequestDto();
         dto.setName("John");
         dto.setSurname("Doe");
         dto.setUsername("john.doe");

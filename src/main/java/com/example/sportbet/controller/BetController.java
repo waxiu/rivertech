@@ -1,9 +1,9 @@
 package com.example.sportbet.controller;
 
 import com.example.sportbet.dto.ApiResponse;
-import com.example.sportbet.dto.BetHistoryDto;
-import com.example.sportbet.dto.BetRequestDto;
-import com.example.sportbet.dto.GameResultDto;
+import com.example.sportbet.dto.response.BetHistoryResponseDto;
+import com.example.sportbet.dto.request.BetRequestDto;
+import com.example.sportbet.dto.response.GameResultResponseDto;
 import com.example.sportbet.service.BetService;
 import com.example.sportbet.service.GameService;
 import org.slf4j.Logger;
@@ -32,11 +32,11 @@ public class BetController {
 
 
     @PostMapping("/place")
-    public ResponseEntity<ApiResponse<GameResultDto>> placeBet(@RequestBody BetRequestDto betRequestDto) {
+    public ResponseEntity<ApiResponse<GameResultResponseDto>> placeBet(@RequestBody BetRequestDto betRequestDto) {
         logger.info("Placing a bet: userId={}, betAmount={}, betNumber={}, gameType={}",
                 betRequestDto.getUserId(), betRequestDto.getBetAmount(), betRequestDto.getBetNumber(), betRequestDto.getGameType());
 
-        GameResultDto result = gameService.playGame(
+        GameResultResponseDto result = gameService.playGame(
                 betRequestDto.getUserId(),
                 betRequestDto.getBetAmount(),
                 betRequestDto.getBetNumber(),
@@ -48,14 +48,14 @@ public class BetController {
     }
 
     @GetMapping("/history/{userId}")
-    public ResponseEntity<ApiResponse<Page<BetHistoryDto>>>getBetHistory(
+    public ResponseEntity<ApiResponse<Page<BetHistoryResponseDto>>>getBetHistory(
             @PathVariable long userId,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
         logger.info("Requesting bet history: userId={}, page={}, size={}", userId, page, size);
 
         Pageable pageable = PageRequest.of(page, size);
-        Page<BetHistoryDto> betHistory = betService.getBetHistoryForUser(userId, pageable);
+        Page<BetHistoryResponseDto> betHistory = betService.getBetHistoryForUser(userId, pageable);
 
         logger.info("Bet history retrieved successfully for userId: {}", userId);
         return ResponseEntity.ok(new ApiResponse<>(true, "Bet history retrieved successfully", betHistory));

@@ -1,4 +1,4 @@
-package com.example.sportbet.dto;
+package com.example.sportbet.dto.response;
 
 import com.example.sportbet.model.enums.BetStatus;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BetHistoryDto {
+public class BetHistoryResponseDto {
     private BigDecimal betAmount;
     private int betNumber;
     private int generatedNumber;

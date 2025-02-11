@@ -1,4 +1,4 @@
-package com.example.sportbet.game;
+package com.example.sportbet.game.logic;
 
 import com.example.sportbet.game.enums.GameType;
 import org.springframework.stereotype.Component;

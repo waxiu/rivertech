@@ -1,11 +1,10 @@
 package com.example.sportbet;
 
-import com.example.sportbet.dto.BetHistoryDto;
-import com.example.sportbet.dto.GameResultDto;
+import com.example.sportbet.dto.response.BetHistoryResponseDto;
+import com.example.sportbet.dto.response.GameResultResponseDto;
 import com.example.sportbet.model.Bet;
 import com.example.sportbet.model.User;
 import com.example.sportbet.model.Transaction;
-import com.example.sportbet.model.User;
 import com.example.sportbet.model.enums.BetStatus;
 import com.example.sportbet.repository.BetRepository;
 import com.example.sportbet.service.BetService;
@@ -133,25 +132,25 @@ class BetServiceTest {
         // given
         Bet bet = createBet(1L, createUser(1L, "testUser"), BigDecimal.TEN, 5);
         bet.setStatus(BetStatus.PENDING);
-        GameResultDto gameResultDto = new GameResultDto(7, BigDecimal.valueOf(50));
+        GameResultResponseDto gameResultResponseDto = new GameResultResponseDto(7, BigDecimal.valueOf(50));
 
         Bet savedBet = createBet(1L, createUser(1L, "testUser"), BigDecimal.TEN, 5);
         savedBet.setStatus(BetStatus.COMPLETED);
-        savedBet.setGeneratedNumber(gameResultDto.getGeneratedNumber());
-        savedBet.setWinnings(gameResultDto.getWinnings());
+        savedBet.setGeneratedNumber(gameResultResponseDto.getGeneratedNumber());
+        savedBet.setWinnings(gameResultResponseDto.getWinnings());
 
         when(betRepository.save(any(Bet.class))).thenReturn(savedBet);
 
         // when
-        betService.finalizeBet(bet, gameResultDto);
+        betService.finalizeBet(bet, gameResultResponseDto);
 
         // then
         verify(betRepository).save(betCaptor.capture());
         Bet capturedBet = betCaptor.getValue();
 
         assertThat(capturedBet.getStatus()).isEqualTo(BetStatus.COMPLETED);
-        assertThat(capturedBet.getGeneratedNumber()).isEqualTo(gameResultDto.getGeneratedNumber());
-        assertThat(capturedBet.getWinnings()).isEqualTo(gameResultDto.getWinnings());
+        assertThat(capturedBet.getGeneratedNumber()).isEqualTo(gameResultResponseDto.getGeneratedNumber());
+        assertThat(capturedBet.getWinnings()).isEqualTo(gameResultResponseDto.getWinnings());
     }
 
 
@@ -169,16 +168,16 @@ class BetServiceTest {
         when(betRepository.findByUserId(userId, pageable)).thenReturn(betsPage);
 
         // when
-        Page<BetHistoryDto> result = betService.getBetHistoryForUser(userId, pageable);
+        Page<BetHistoryResponseDto> result = betService.getBetHistoryForUser(userId, pageable);
 
         // then
         assertThat(result.getContent()).hasSize(1);
-        BetHistoryDto betHistoryDto = result.getContent().get(0);
-        assertThat(betHistoryDto.getBetAmount()).isEqualTo(bet.getBetAmount());
-        assertThat(betHistoryDto.getBetNumber()).isEqualTo(bet.getBetNumber());
-        assertThat(betHistoryDto.getGeneratedNumber()).isEqualTo(bet.getGeneratedNumber());
-        assertThat(betHistoryDto.getWinnings()).isEqualTo(bet.getWinnings());
-        assertThat(betHistoryDto.getStatus()).isEqualTo(bet.getStatus());
+        BetHistoryResponseDto betHistoryResponseDto = result.getContent().get(0);
+        assertThat(betHistoryResponseDto.getBetAmount()).isEqualTo(bet.getBetAmount());
+        assertThat(betHistoryResponseDto.getBetNumber()).isEqualTo(bet.getBetNumber());
+        assertThat(betHistoryResponseDto.getGeneratedNumber()).isEqualTo(bet.getGeneratedNumber());
+        assertThat(betHistoryResponseDto.getWinnings()).isEqualTo(bet.getWinnings());
+        assertThat(betHistoryResponseDto.getStatus()).isEqualTo(bet.getStatus());
         verify(betRepository, times(1)).findByUserId(userId, pageable);
     }
 
@@ -190,7 +189,7 @@ class BetServiceTest {
         when(betRepository.findByUserId(userId, pageable)).thenReturn(Page.empty());
 
         // when
-        Page<BetHistoryDto> result = betService.getBetHistoryForUser(userId, pageable);
+        Page<BetHistoryResponseDto> result = betService.getBetHistoryForUser(userId, pageable);
 
         // then
         assertThat(result.getContent()).isEmpty();

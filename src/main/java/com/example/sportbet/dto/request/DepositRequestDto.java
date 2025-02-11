@@ -1,4 +1,4 @@
-package com.example.sportbet.dto;
+package com.example.sportbet.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

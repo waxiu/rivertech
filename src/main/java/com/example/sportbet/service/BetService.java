@@ -1,7 +1,7 @@
 package com.example.sportbet.service;
 
-import com.example.sportbet.dto.BetHistoryDto;
-import com.example.sportbet.dto.GameResultDto;
+import com.example.sportbet.dto.response.BetHistoryResponseDto;
+import com.example.sportbet.dto.response.GameResultResponseDto;
 import com.example.sportbet.model.Bet;
 import com.example.sportbet.model.User;
 import com.example.sportbet.model.Transaction;
@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Service
 public class BetService {
@@ -56,7 +55,7 @@ public class BetService {
     }
 
     @Transactional
-    public void finalizeBet(Bet bet, GameResultDto gameResultDto) {
+    public void finalizeBet(Bet bet, GameResultResponseDto gameResultResponseDto) {
         logger.info("Finalizing bet with betId: {}, for userId: {}", bet.getId(), bet.getUser().getId());
 
         if (bet.getStatus() != BetStatus.PENDING) {
@@ -65,20 +64,20 @@ public class BetService {
         }
 
         bet.setStatus(BetStatus.COMPLETED);
-        bet.setGeneratedNumber(gameResultDto.getGeneratedNumber());
-        bet.setWinnings(gameResultDto.getWinnings());
+        bet.setGeneratedNumber(gameResultResponseDto.getGeneratedNumber());
+        bet.setWinnings(gameResultResponseDto.getWinnings());
         Bet updatedBet = betRepository.save(bet);
 
         logger.info("Bet finalized with betId: {}, status: {}, winnings: {}",
                 updatedBet.getId(), updatedBet.getStatus(), updatedBet.getWinnings());
     }
 
-    public Page<BetHistoryDto> getBetHistoryForUser(long userId, Pageable pageable) {
+    public Page<BetHistoryResponseDto> getBetHistoryForUser(long userId, Pageable pageable) {
         logger.info("Fetching paginated bet history for userId: {}, page: {}, size: {}",
                 userId, pageable.getPageNumber(), pageable.getPageSize());
 
         return betRepository.findByUserId(userId, pageable)
-                .map(bet -> new BetHistoryDto(
+                .map(bet -> new BetHistoryResponseDto(
                         bet.getBetAmount(),
                         bet.getBetNumber(),
                         bet.getGeneratedNumber(),

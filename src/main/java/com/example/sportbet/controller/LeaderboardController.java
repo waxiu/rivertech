@@ -1,7 +1,7 @@
 package com.example.sportbet.controller;
 
 import com.example.sportbet.dto.ApiResponse;
-import com.example.sportbet.dto.UserRankingDto;
+import com.example.sportbet.dto.response.UserRankingResponseDto;
 import com.example.sportbet.service.LeaderboardService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,15 +29,15 @@ public class LeaderboardController {
     }
 
     @GetMapping("/winners")
-    public ResponseEntity<ApiResponse<List<UserRankingDto>>> getLeaderboard(@RequestParam(defaultValue = "10") int top) {
+    public ResponseEntity<ApiResponse<List<UserRankingResponseDto>>> getLeaderboard(@RequestParam(defaultValue = "10") int top) {
         logger.info("Fetching top {} users from the leaderboard", top);
 
         Set<ZSetOperations.TypedTuple<Long>> leaderboard = leaderboardService.getTopUsers(top);
 
-        List<UserRankingDto> rankings = leaderboard.stream()
-                .map(entry -> new UserRankingDto(
-                        entry.getValue(),  // userId
-                        entry.getScore()   // score
+        List<UserRankingResponseDto> rankings = leaderboard.stream()
+                .map(entry -> new UserRankingResponseDto(
+                        entry.getValue(),
+                        entry.getScore()
                 ))
                 .collect(Collectors.toList());
 

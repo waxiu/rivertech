@@ -1,11 +1,10 @@
 package com.example.sportbet;
 
-import com.example.sportbet.dto.GameResultDto;
-import com.example.sportbet.game.GameLogic;
-import com.example.sportbet.game.GameLogicFactory;
+import com.example.sportbet.dto.response.GameResultResponseDto;
+import com.example.sportbet.game.logic.GameLogic;
+import com.example.sportbet.game.logic.GameLogicFactory;
 import com.example.sportbet.game.enums.GameType;
 import com.example.sportbet.model.*;
-import com.example.sportbet.repository.UserRepository;
 import com.example.sportbet.repository.UserRepository;
 import com.example.sportbet.service.BetService;
 import com.example.sportbet.service.GameService;
@@ -74,7 +73,7 @@ class GameServiceTest {
         doReturn(generatedNumber).when(gameServiceSpy).generateRandomNumber();
 
         // Act
-        GameResultDto result = gameServiceSpy.playGame(userId, betAmount, chosenNumber, gameType);
+        GameResultResponseDto result = gameServiceSpy.playGame(userId, betAmount, chosenNumber, gameType);
 
         // Assert
         assertThat(result.getGeneratedNumber()).isEqualTo(generatedNumber);

@@ -1,8 +1,8 @@
 package com.example.sportbet.service;
 
-import com.example.sportbet.dto.GameResultDto;
-import com.example.sportbet.game.GameLogic;
-import com.example.sportbet.game.GameLogicFactory;
+import com.example.sportbet.dto.response.GameResultResponseDto;
+import com.example.sportbet.game.logic.GameLogic;
+import com.example.sportbet.game.logic.GameLogicFactory;
 import com.example.sportbet.game.enums.GameType;
 import com.example.sportbet.model.Bet;
 import com.example.sportbet.model.User;
@@ -41,7 +41,7 @@ public class GameService {
         this.transactionService = transactionService;
     }
 
-    public GameResultDto playGame(Long userId, BigDecimal betAmount, int chosenNumber, GameType gameType) {
+    public GameResultResponseDto playGame(Long userId, BigDecimal betAmount, int chosenNumber, GameType gameType) {
         logger.info("Game initiated for userId: {}, betAmount: {}, chosenNumber: {}, gameType: {}",
                 userId, betAmount, chosenNumber, gameType);
 
@@ -60,23 +60,23 @@ public class GameService {
         // Generate random number once
         int randomNumber = generateRandomNumber();
 
-        GameResultDto gameResultDto = generateGameResult(gameType, bet, betAmount, chosenNumber, randomNumber);
+        GameResultResponseDto gameResultResponseDto = generateGameResult(gameType, bet, betAmount, chosenNumber, randomNumber);
         logger.info("Game result generated with randomNumber: {}, winnings: {}",
-                gameResultDto.getGeneratedNumber(), gameResultDto.getWinnings());
+                gameResultResponseDto.getGeneratedNumber(), gameResultResponseDto.getWinnings());
 
-        walletService.addFundsToWallet(user.getWallet(), gameResultDto.getWinnings());
-        logger.info("Funds added to walletId: {} for winnings: {}", user.getWallet().getId(), gameResultDto.getWinnings());
+        walletService.addFundsToWallet(user.getWallet(), gameResultResponseDto.getWinnings());
+        logger.info("Funds added to walletId: {} for winnings: {}", user.getWallet().getId(), gameResultResponseDto.getWinnings());
 
-        transactionService.updateWalletAndTransactions(user.getWallet(), gameResultDto.getWinnings());
+        transactionService.updateWalletAndTransactions(user.getWallet(), gameResultResponseDto.getWinnings());
         logger.info("Transactions updated for walletId: {} with winnings: {}",
-                user.getWallet().getId(), gameResultDto.getWinnings());
+                user.getWallet().getId(), gameResultResponseDto.getWinnings());
 
-        betService.finalizeBet(bet, gameResultDto);
+        betService.finalizeBet(bet, gameResultResponseDto);
         logger.info("Bet finalized with betId: {}, status: {}, winnings: {}",
                 bet.getId(), BetStatus.COMPLETED, bet.getWinnings());
 
         logger.info("Game completed for userId: {}, betId: {}", user, bet.getId());
-        return gameResultDto;
+        return gameResultResponseDto;
     }
 
     private User validateUserAndBalance(Long userId, BigDecimal betAmount) {
@@ -97,7 +97,7 @@ public class GameService {
         return user;
     }
 
-    private GameResultDto generateGameResult(GameType gameType, Bet bet, BigDecimal betAmount, int chosenNumber, int randomNumber) {
+    private GameResultResponseDto generateGameResult(GameType gameType, Bet bet, BigDecimal betAmount, int chosenNumber, int randomNumber) {
         logger.debug("Generating game result for betId: {}, gameType: {}", bet.getId(), gameType);
         GameLogic gameLogic = gameLogicFactory.getGameLogic(gameType);
         BigDecimal winnings = gameLogic.calculateWinnings(randomNumber, chosenNumber, betAmount);
@@ -106,7 +106,7 @@ public class GameService {
         bet.setWinnings(winnings);
         logger.debug("Game result generated for betId: {}, randomNumber: {}, winnings: {}",
                 bet.getId(), randomNumber, winnings);
-        return new GameResultDto(randomNumber, winnings);
+        return new GameResultResponseDto(randomNumber, winnings);
     }
 
 

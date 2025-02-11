@@ -1,4 +1,4 @@
-package com.example.sportbet.configuration;
+package com.example.sportbet.configuration.cache;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

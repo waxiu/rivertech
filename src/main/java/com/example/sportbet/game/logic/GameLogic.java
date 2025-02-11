@@ -1,4 +1,4 @@
-package com.example.sportbet.game;
+package com.example.sportbet.game.logic;
 
 import java.math.BigDecimal;
 

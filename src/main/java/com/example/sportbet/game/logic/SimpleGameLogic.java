@@ -1,6 +1,8 @@
-package com.example.sportbet.game;
+package com.example.sportbet.game.logic;
 
 import java.math.BigDecimal;
+
+import com.example.sportbet.game.logic.GameLogic;
 import org.springframework.stereotype.Component;
 
 @Component

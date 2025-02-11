@@ -22,10 +22,10 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/api/user/register", "/api/user/login").permitAll() // Te endpointy są dostępne bez tokena
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN") // Tylko ADMIN może używać admin API
-                        .requestMatchers("/api/user/**").authenticated() // Wymaga tokena dla reszty user API
-                        .anyRequest().permitAll() // Wszystkie inne endpointy publiczne
+                        .requestMatchers("/api/user/register", "/api/user/login").permitAll()
+                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/api/user/**").authenticated()
+                        .anyRequest().permitAll()
                 )
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 

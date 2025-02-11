@@ -1,6 +1,6 @@
-package com.example.sportbet.dto;
+package com.example.sportbet.dto.request;
 
-import com.example.sportbet.model.enums.BetStatus;
+import com.example.sportbet.game.enums.GameType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,11 +10,9 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BetDto {
-    private Long id;
+public class BetRequestDto {
+    private Long userId;
     private BigDecimal betAmount;
     private int betNumber;
-    private BetStatus status;
-    private Long userId;
-
+    private GameType gameType;
 }
