@@ -4,6 +4,7 @@ import com.example.sportbet.dto.response.UserRegistrationRequestDto;
 import com.example.sportbet.model.User;
 import com.example.sportbet.model.Wallet;
 import com.example.sportbet.repository.UserRepository;
+import com.example.sportbet.service.AuthService;
 import com.example.sportbet.service.UserService;
 import com.example.sportbet.service.WalletService;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.math.BigDecimal;
 import java.util.Optional;
@@ -29,8 +31,14 @@ class UserServiceTest {
     @Mock
     private WalletService walletService;
 
+    @Mock
+    private PasswordEncoder passwordEncoder;
+
     @InjectMocks
     private UserService userService;
+
+    @InjectMocks
+    private AuthService authService;
     @Test
     void shouldRegisterUserSuccessfully() {
         // given
@@ -38,22 +46,21 @@ class UserServiceTest {
         dto.setName("John");
         dto.setSurname("Doe");
         dto.setUsername("john.doe");
+        dto.setPassword("password");
+        dto.setEmail("john.doe@example.com");
 
-        User mockUser = User.builder()
-                .name(dto.getName())
-                .surname(dto.getSurname())
-                .username(dto.getUsername())
-                .build();
-        mockUser.setId(1L); // Ustawienie ID gracza po zapisaniu w repozytorium
+        String encodedPassword = "encodedPassword123"; // Symulujemy zakodowane hasło
+
+        when(passwordEncoder.encode(dto.getPassword())).thenReturn(encodedPassword);
 
         when(userRepository.save(any(User.class))).thenAnswer(invocation -> {
             User user = invocation.getArgument(0);
-            user.setId(1L); // Symulowanie ustawienia ID w repozytorium
+            user.setId(1L); // Symulacja ustawienia ID w repozytorium
             return user;
         });
 
         // when
-        User savedUser = userService.registerUser(dto);
+        User savedUser = authService.registerUser(dto);
 
         // then
         assertThat(savedUser).isNotNull();
@@ -61,10 +68,13 @@ class UserServiceTest {
         assertThat(savedUser.getName()).isEqualTo(dto.getName());
         assertThat(savedUser.getSurname()).isEqualTo(dto.getSurname());
         assertThat(savedUser.getUsername()).isEqualTo(dto.getUsername());
+        assertThat(savedUser.getEmail()).isEqualTo(dto.getEmail());
+        assertThat(savedUser.getPassword()).isEqualTo(encodedPassword); // Sprawdzamy zakodowane hasło
+
+        verify(passwordEncoder).encode(dto.getPassword()); // Upewniamy się, że encoder został wywołany
         verify(userRepository).save(any(User.class));
         verify(walletService).createWalletForUser(savedUser);
     }
-
     @Test
     void shouldDepositToUserWalletSuccessfully() {
         // given
